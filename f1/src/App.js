@@ -7,9 +7,6 @@ import Footer from './Footer';
 function App() {
   return (
     <>
-    <head>
-      head
-    </head>
       <Header>
         Header
       </Header>
