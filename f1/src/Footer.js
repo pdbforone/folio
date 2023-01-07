@@ -1,7 +1,8 @@
+import Lime from './assets/Rectangle 4.svg';
 function Footer () {
 return (
     <>
-        <img role="logo" src="assets/Rectangle 4.svg"/>
+        <img role="logo" src={Lime} alt=""/>
         <h2 role="Copyright">© Little Lemon</h2>
     </>
 )};
