@@ -2,8 +2,10 @@ import Logo from './assets/Logo.svg';
 import Basket from './assets/basket .svg';
 function Header () {
 return (
+    <header> 
+    <img src = {Logo} alt="" />
     <nav>
-        <img src = {Logo} alt="" />
+       
         <ul>
             <li><a>Home</a></li>
             <li><a>About</a></li>
@@ -12,8 +14,10 @@ return (
             <li><a>Order Online</a></li>
             <li><a>Login</a></li>
         </ul>
-        <img role="cart" src={Basket} alt=""/>
+        
     </nav>
+    <img role="cart" src={Basket} alt=""/>
+    </header>
 )};
 
 export default Header;
