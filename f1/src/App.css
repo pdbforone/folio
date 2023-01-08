@@ -1,21 +1,29 @@
 body {
   margin: 0 auto;
   font-family: Karla;
+  color: #495E57;
   background-color: silver;
 }
 
-grid {
+.container {
   display: grid;
-  grid-template-columns: repeat(12,1fr);
-  gap: 30px;
-
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
 }
 header {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  grid-row-end: 3;
   padding: 20px 40px;
   background-color: white;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
   
 }
 
+# Lem {
+  grid-column: 1/2;
+}
 
 nav ul {
   list-style: none;
@@ -25,6 +33,12 @@ header nav a {
   text-decoration: none;
 }
 
+main {
+  grid-row: 3/8;
+  background-color: whitesmoke;
+}
+
 footer {
+  grid-column: 1/3;
     background-color:olive;
 }

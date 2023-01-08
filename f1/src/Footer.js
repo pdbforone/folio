@@ -1,7 +1,7 @@
 import Lime from './assets/Rectangle 4.svg';
 function Footer () {
 return (
-    <footer>
+    <footer class="container">
         <img role="logo" src={Lime} alt=""/>
         <h2 role="Copyright">© Little Lemon</h2>
     </footer>

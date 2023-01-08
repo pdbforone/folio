@@ -3,9 +3,9 @@ import Basket from './assets/basket .svg';
 import Nav from './Nav.js';
 function Header () {
 return (
-    <header class = "grid"> 
+    <header class = "container"> 
    
-    <img class="lem" src = {Logo} alt="" />
+    <img id="Lem" src = {Logo} alt="" />
     
     <Nav></Nav>
     
