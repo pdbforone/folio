@@ -1,5 +1,30 @@
 body {
+  margin: 0 auto;
+  font-family: Karla;
+  background-color: silver;
+}
+
+grid {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 2fr 1fr; 
+  grid-template-columns: repeat(12,1fr);
+  gap: 30px;
+
+}
+header {
+  padding: 20px 40px;
+  background-color: white;
+  
+}
+
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+header nav a {
+  text-decoration: none;
+}
+
+footer {
+    background-color:olive;
 }

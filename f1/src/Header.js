@@ -1,22 +1,16 @@
 import Logo from './assets/Logo.svg';
 import Basket from './assets/basket .svg';
+import Nav from './Nav.js';
 function Header () {
 return (
-    <header> 
-    <img src = {Logo} alt="" />
-    <nav>
-       
-        <ul>
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Menu</a></li>
-            <li><a>Reservations</a></li>
-            <li><a>Order Online</a></li>
-            <li><a>Login</a></li>
-        </ul>
-        
-    </nav>
+    <header class = "grid"> 
+   
+    <img class="lem" src = {Logo} alt="" />
+    
+    <Nav></Nav>
+    
     <img role="cart" src={Basket} alt=""/>
+   
     </header>
 )};
 
