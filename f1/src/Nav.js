@@ -2,7 +2,7 @@ import Header from "./Header";
 
 function Nav () {
     return(
-        <nav class="nav-bar">
+        <nav class="main-nav">
        
         <ul>
             <li><a href= "">Home</a></li>

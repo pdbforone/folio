@@ -2,43 +2,80 @@ body {
   margin: 0 auto;
   font-family: Karla;
   color: #495E57;
+  font-size: 1rem;
   background-color: silver;
 }
 
-.container {
+.wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(12, [col-start] 1fr); 
+  grid-template-rows: minmax(150px, auto);
+ /*display: grid;
+ grid-template-columns: repeat(3,1fr);
+grid-template-rows: 2fr 1fr;*/
+}
+
+.wrapper > * {
+  grid-column: col-start/ span 12;
 }
 header {
-  grid-column: 1/4;
-  grid-row: 1/3;
-  grid-row-end: 3;
+  display: flex;
   padding: 20px 40px;
   background-color: white;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  
+ 
 }
 
-# Lem {
-  grid-column: 1/2;
+header nav {
+    background-color: blanchedalmond;
+    width: 50%;
+    margin: auto;
 }
-
-nav ul {
-  list-style: none;
-  text-align: center;
+header nav ul {
+  text-align: justify;
 }
 header nav a {
   text-decoration: none;
 }
 
 main {
-  grid-row: 3/8;
-  background-color: whitesmoke;
+    background-color: whitesmoke;
+    font-family: Markazi Text;
+}
+
+#forms {
+  background-color: silver;
 }
 
 footer {
-  grid-column: 1/3;
     background-color:olive;
 }
+
+/*@media (min-width: 500px) {
+
+..content,
+.main-footer {
+  grid-column: col-start 4 / span 9;
+}
+nav ul {
+  display: flex;
+  justify-content:center;
+}
+}
+
+@media (min-width: 700px) {
+  .main-nav {
+    grid-column: col-start / span 2;
+    grid-row: 2 / 4;
+  }
+  .content {
+    grid-column: col-start 3 / span 8;
+    grid-row: 2 / 4;
+  }
+
+  .main-footer {
+    grid-column: col-start / span 12;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}*/

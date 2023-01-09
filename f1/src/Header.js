@@ -4,13 +4,13 @@ import Nav from './Nav.js';
 function Header () {
 return (
     <header class = "container"> 
-   
+
+
+
     <img id="Lem" src = {Logo} alt="" />
-    
     <Nav></Nav>
-    
-    <img role="cart" src={Basket} alt=""/>
-   
+    <img id= "Cart"role="cart" src={Basket} alt=""/>
+
     </header>
 )};
 
