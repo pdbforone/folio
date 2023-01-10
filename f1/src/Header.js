@@ -3,13 +3,13 @@ import Basket from './assets/basket .svg';
 import Nav from './Nav.js';
 function Header () {
 return (
-    <header class = "container"> 
+    <header className = "container">
 
 
 
-    <img id="Lem" src = {Logo} alt="" />
+    <img src = {Logo} alt="" />
     <Nav></Nav>
-    <img id= "Cart"role="cart" src={Basket} alt=""/>
+    <img id= "Cart" src={Basket} alt=""/>
 
     </header>
 )};

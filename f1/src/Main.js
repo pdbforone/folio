@@ -1,12 +1,12 @@
 import Lime from './assets/Rectangle 4.svg';
 function Main () {
 return (
-    <main class="main-head">
+    <main className="main-head">
         <>
-        <h1 role="Page title">Reserve
-        A Table</h1>
-        
-        <img role="logo" src={Lime}/>
+        <h1>Reserve</h1>
+        <h1>A Table</h1>
+
+        <img id="lime" src={Lime} alt= "Lime Logo"/>
         </>
 
     <section id= "forms">
