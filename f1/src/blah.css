@@ -77,7 +77,6 @@ body {
       grid-column: col-start 3 / span 8;
       grid-row: 2 / 4;
     }
-  
     .main-footer {
       grid-column: col-start / span 12;
     }

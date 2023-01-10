@@ -3,7 +3,7 @@ import Basket from './assets/basket .svg';
 import Nav from './Nav.js';
 function Header () {
 return (
-    <header className = "container">
+    <header className = "main-head">
 
 
 
