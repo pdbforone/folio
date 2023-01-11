@@ -7,9 +7,12 @@ return (
 
 
 
-    <img src = {Logo} alt="" />
+    <img id= "hlogo" src = {Logo} alt="" />
     <Nav></Nav>
-    <img id= "Cart" src={Basket} alt=""/>
+    
+    <a href = "www.google.com" id= "hcart">
+    <img id = "hcarti" src={Basket} alt=""/>
+    </a>
 
     </header>
 )};

@@ -3,18 +3,18 @@ function Main () {
 return (
     <main className="content">
         <section className="main-hero">
-        <hgroup>
-        <h1>Reserve</h1>
-        <h1>A Table</h1>
+        <hgroup id= "heroh1g">
+        <h1 className="reserve">Reserve</h1>
+        <h1 className="reserve">A Table</h1>
         </hgroup>
 
         <img id="lime" src={Lime} alt= "Lime Logo"/>
         </section>
 
     <section id= "forms">
-        <hgroup>
-            <h2>Let's get started and see where</h2>
-            <h2>we can fit you in!</h2>
+        <hgroup id="formh1">
+            <h1>Let's get started and see where</h1>
+            <h1>we can fit you in!</h1>
         </hgroup>
     </section>
     </main>
