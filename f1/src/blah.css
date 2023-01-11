@@ -1,86 +1,107 @@
 body {
+  background-color: white;
+  margin: 3 rem, 3 rem, 5%, 5%;
+  font-family: Karla;
+  color: #495E57;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1, 1fr;
+  background-color: white;
+  padding: 1%;
+  margin-bottom: 0;
+  font-weight: 700;
+  }
+
+#hlogo {
+  grid-column: 1/ span 1;
+  grid-row: 1/ span 1;
+  height: 4rem;
+  max-width: 100%;
+}
+
+nav {
+  grid-column: 2/ span 4;
+  grid-row: 1/span 1;
+}
+
+#hcart {
+  grid-column: 6 / 8;
+  grid-row: 1/ span 1;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100%;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  list-style: none;
+}
+
+nav li {
+  text-align: center;
+  max-width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #495E57;
+  font-size: 1rem;
+  max-width: 100%;
+  }
+
+#hcarti {
+  height: 4rem;
+  max-width: 80%;
+}
+main {
+  margin-top: 0;
+}
+.main-hero {
+  display:grid;
+  grid-template-columns: repeat(16, [col-start] 1fr);
+  background-color: white;
+  font-family: Markazi Text;
+  font-size: 2.5rem;
+  border-top: 0.5rem solid #495E57;
+  border-left: 0.25rem solid #495E57;
+  border-right: 0.25rem solid #495E57;
+  border-bottom: 0.5rem solid #495E57;
+  max-width: 100%;
+}
+
+#heroh1g {
+  grid-column: 5/span 8;
+  margin-top: 6rem;
+  max-width: 100%;
+  text-align: center;
+}
+
+.reserve {
+  max-width: 100%;
+  font-weight: 500;
+}
+
+#lime {
+  grid-column: 12/span 13;
+  width: 10rem;
+  height: 10rem;
+  max-width: 100%;
+}
+
+#forms {
+  background-color: white;
+}
+
+#formh1 {
+  text-align: center;
+  font-weight: 800;
+}
+
+footer {
     background-color: silver;
-    margin: 0 auto;
-    font-family: Karla;
-    color: #495E57;
-    font-size: 1rem;
-  }
-  
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(12, [col-start] 1fr);
-  }
-  
-  .wrapper > * {
-    grid-column: col-start/ span 12;
-  }
-  
-  header {
-    display: flex;
-    background-color: white;
-  }
-  header > img {
-    display: inline-block;
-  }
-  .main-nav {
-    display: inline-block;
-    font-size: 2rem;
-   }
-  nav ul {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    justify-content: center;
-    list-style: none;
-    text-align: center;
-  }
-  
-  nav li {
-    padding: 3%;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #495E57;
-  }
-  
-  main {
-      background-color: whitesmoke;
-      font-family: Markazi Text;
-  }
-  
-  #forms {
-    background-color: silver;
-  }
-  
-  footer {
-      background-color:olive;
-  }
-  
-  @media (min-width: 500px) {
-  
-  .content,
-  .main-footer {
-    grid-column: col-start 1/ span 9;
-  }
-  nav ul {
-    display: flex;
-    justify-content:center;
-  }
-  }
-  
-  @media (min-width: 700px) {
-    .main-nav {
-      grid-column: col-start / span 2;
-      grid-row: 2 / 4;
-    }
-    .content {
-      grid-column: col-start 3 / span 8;
-      grid-row: 2 / 4;
-    }
-    .main-footer {
-      grid-column: col-start / span 12;
-    }
-    nav ul {
-      flex-direction: column;
-    }
-  }
+}
+
