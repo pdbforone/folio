@@ -1,29 +1,55 @@
-import React, { useState}  from 'react';
-import { NavLink } from "react-router-dom";
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import Homepage from './Home';
+import { MdClose } from "react-icons/md"
+import { FiMenu } from "react-icons/fi"
+import About from './About';
+import Menu from './Menu';
+import App from './App';
+import Order from './Order';
+import Login from './Login';
 
 
-function Nav () {
-    const [navbarOpen, setNavbarOpen] = useState(false)
-    const handleToggle = () => {
-        setNavbarOpen(prev => !prev)
-        
-      }
-    return (
+function Nav() {
+  const [navbarOpen, setNavbarOpen] = useState(false)
+  const handleToggle = () => {
+    setNavbarOpen(prev => !prev)
 
-        <nav className="main-nav">
-            <button onClick={handleToggle}>{navbarOpen ? "Close" : "Open"}</button>
-                <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
-                    <li className="nav-item"><NavLink to={link.path} activeClassName="active-link" onClick={() => closeMenu()} 
-                    exact>{link.text}Home</NavLink></li>
-                    <li className="nav-item"><a href="About" class="nav-link">About</a></li>
-                    <li className="nav-item"><a href="Menu" class="nav-link">Menu</a></li>
-                    <li className="nav-item"><a href="Reservations" class="nav-link">Reservations</a></li>
-                    <li className="nav-item"><a href="Order Online" class="nav-link">Order</a></li>
-                    <li className="nav-item"><a href="Login" class="nav-link">Login</a></li>
+  }
+  const closeMenu = () => {
+    setNavbarOpen(false);
+  }
+  return (
 
-                </ul>
+    <nav className="main-nav">
+      <button onClick={handleToggle}>
+        {navbarOpen ? (
+          <MdClose style={{ color: "#fff", width: "40px", height: "40px" }} />
+        ) : (
+          <FiMenu style={{ color: "#7b7b7b", width: "40px", height: "40px" }} />
+        )}
+      </button>
+      <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
+        <li className="nav-item">
+          <NavLink to={Homepage.path} activeClassName="active-link" onClick={() => closeMenu()}
+            exact class="nav-link">{Homepage.text}Home</NavLink></li>
 
-            </nav>
-    )
+        <li className="nav-item">
+        <NavLink to={About.path} activeClassName="active-link" onClick={() => closeMenu()} 
+                    exact class= "nav-link">{About.text}About</NavLink></li>
+        <li className="nav-item">
+        <NavLink to={Menu.path} activeClassName="active-link" onClick={() => closeMenu()} 
+                    exact class= "nav-link">{Menu.text}Menu</NavLink></li>
+        <li className="nav-item"><NavLink to={App.path} activeClassName="active-link" onClick={() => closeMenu()} 
+                    exact class= "nav-link">{App.text}Reservations</NavLink></li>
+        <li className="nav-item"><NavLink to={Order.path} activeClassName="active-link" onClick={() => closeMenu()} 
+                    exact class= "nav-link">{Order.text}Order</NavLink></li>
+        <li className="nav-item"><NavLink to={Login.path} activeClassName="active-link" onClick={() => closeMenu()} 
+                    exact class= "nav-link">{Login.text}Login</NavLink></li>
+
+      </ul>
+
+    </nav>
+  )
 }
 export default Nav;
