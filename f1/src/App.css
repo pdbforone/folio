@@ -3,19 +3,18 @@
   padding: 0;
 }
 
-img {
-  max-width: 100%;
-  min-width: 10%;
-}
+
 body {
   background-color: white;
   margin: 3 rem, 3 rem, 5%, 5%;
   font-family: Karla;
   color: #495E57;
+  overflow-y: scroll;
 }
 .wrapper {
   display: grid;
   grid-template-columns: repeat(4,[col-start] 1fr);
+  grid-template-rows: repeat(2000, 8px);
   column-gap: 0.504em;
 }
  .wrapper > * {
@@ -26,7 +25,10 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1, 1fr;
-  column-gap: 0.504em;
+  column-gap: 1.26em;
+  margin-left: 1.26em;
+  margin-right: 1.26em;
+  justify-content: space-between;
   background-color: white;
   padding: 1%;
   margin-bottom: 0;
@@ -35,6 +37,10 @@ body {
   nav {
     grid-column: 1/ span 1;
     grid-row: 1/ span 1;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
 #hlogo {
@@ -43,8 +49,47 @@ display: none;
 
 #hcart {
   grid-row: 1/1;
-  grid-column: 4/ 4;
+  grid-column: 4/ span 4;
 }
+
+.main-hero {
+  display: grid;
+  grid-template-columns: repeat(4, [column-start] 1fr);
+  grid-template-rows: repeat(2,1fr);
+  column-gap: 1.26em;
+  box-sizing: border-box;
+  justify-content: stretch;
+border-width: 0.315em 0.086em;
+border-style: solid;
+border-color: #494949;
+font-weight: 500;
+
+}
+.main-hero h1 {
+  font-size: 4.032em;
+  
+ 
+}
+#heroh1g {
+  grid-column: 2 / span 3;
+  grid-row: 1/ span 1;
+  padding-top: 1em;
+  justify-content: stretch;
+  
+  }
+
+.main-hero img {
+  height: 6.048em;
+  width: 4.725em;
+  }
+
+#lime {
+  grid-column: 4/ span 4;
+  grid-row: 2/ span 2;
+  justify-content: center;
+
+}
+
 
 .navBar {
   position: relative;
@@ -63,7 +108,7 @@ display: none;
   list-style: none;
   position: fixed;
   top: 0;
-  background: darkcyan;
+  background:#495E57 ;
   left: 0;
   bottom: 0;
   height: 100vh;
@@ -81,9 +126,8 @@ a {
   display: block;
   padding: 10px 40px;
   text-decoration: none;
-  color: #3fffd2;
-  text-transform: uppercase;
-  font-weight: bold;
+  color: white;
+  font-weight: 700;
 }
 
 .menuNav li:first-child {

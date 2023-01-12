@@ -8,6 +8,8 @@ import Menu from './Menu';
 import App from './App';
 import Order from './Order';
 import Login from './Login';
+import Hamburger from './assets/🦆 icon _hamburger menu.svg';
+import Burger from './assets/🦆 icon _hamburger menu_.svg';
 
 
 function Nav() {
@@ -24,9 +26,9 @@ function Nav() {
     <nav className="main-nav">
       <button onClick={handleToggle}>
         {navbarOpen ? (
-          <MdClose style={{ color: "#fff", width: "40px", height: "40px" }} />
+          <img src={Burger} />
         ) : (
-          <FiMenu style={{ color: "#7b7b7b", width: "40px", height: "40px" }} />
+          <img src={Hamburger} />
         )}
       </button>
       <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
