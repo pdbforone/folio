@@ -5,6 +5,19 @@ body {
   color: #495E57;
 }
 
+hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
 header {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -104,4 +117,67 @@ main {
 footer {
     background-color: silver;
 }
+@media screen and (min-width: 40em) {
 
+  nav ul,
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav a:link,
+nav a:visited {
+  background-color: rgba(207, 232, 220, 0.2);
+  border: 2px solid rgb(79, 185, 227);
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: rgba(207, 232, 220, 0.7);
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 5rem;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow:
+      0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+.nav-item {
+  margin: 2.5rem 0;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+  .nav-menu.active {
+    left: 0;
+  }
+  
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+  
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  
+}
