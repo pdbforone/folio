@@ -106,19 +106,21 @@ footer {
   position: fixed;
   background-color: #494949;
   color: white;
-  font-size: calc(1rem + 1vw)
+  font-size: calc(1rem + 1vw);
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 #fl {
-  grid-column: 1/1;
+  grid-column: 2/3;
   grid-row: 1;
   justify-self: center;
-  background-color: oldlace;
+  width: 100%;
 }
 
 #fh {
-  grid-column: 2 / span 3;
+  grid-column: 1;
   grid-row: 1;
-  justify-self: baseline;
+  justify-self: right;
   margin-top: auto;
   margin-bottom: auto;
 }
