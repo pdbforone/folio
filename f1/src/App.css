@@ -6,20 +6,11 @@
 
 body {
   background-color: white;
-  margin: 3 rem, 3 rem, 5%, 5%;
+  
   font-family: Karla;
   color: #495E57;
   overflow-y: scroll;
 }
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(4,[col-start] 1fr);
-  grid-template-rows: repeat(2000, 8px);
-  column-gap: 0.504em;
-}
- .wrapper > * {
-    grid-column: col-start / span 4;
- }
 
  header {
   display: grid;
@@ -35,7 +26,7 @@ body {
   font-weight: 700;
   }
   nav {
-    grid-column: 1/ span 1;
+    grid-column: 1/ span ;
     grid-row: 1/ span 1;
     margin-right: auto;
     margin-left: auto;
@@ -50,47 +41,87 @@ display: none;
 #hcart {
   grid-row: 1/1;
   grid-column: 4/ span 4;
+  ;
 }
 
+#hero {
+  width: 100%;
+  box-sizing: border-box;
+  border-width: 0.315rem 0.086rem;
+  border-style: solid;
+  border-color: #494949;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  box-shadow: 12px 12px 2px 1px white;
+}
 .main-hero {
   display: grid;
   grid-template-columns: repeat(4, [column-start] 1fr);
-  grid-template-rows: repeat(2,1fr);
   column-gap: 1.26em;
-  box-sizing: border-box;
-  justify-content: stretch;
-border-width: 0.315em 0.086em;
-border-style: solid;
-border-color: #494949;
-font-weight: 500;
+  margin-left: 1.26em;
+  margin-right: 1.26em;
+  grid-template-rows: repeat(34,8px);
+
 
 }
 .main-hero h1 {
-  font-size: 4.032em;
+  font-size: calc(2.5rem + 3vw);
+  }
   
  
-}
+
 #heroh1g {
-  grid-column: 2 / span 3;
-  grid-row: 1/ span 1;
-  padding-top: 1em;
-  justify-content: stretch;
+  grid-column: 2/ span 2;
+  grid-row: 8/ span 20;
+  text-align: center;
   
   }
 
 .main-hero img {
-  height: 6.048em;
-  width: 4.725em;
+  height: 6.048rem;
+  width: 4.725rem;
   }
 
 #lime {
-  grid-column: 4/ span 4;
-  grid-row: 2/ span 2;
-  justify-content: center;
+  grid-column: 4/ 4;
+  grid-row: 22/ span 34;
+  justify-content: stretch;
+  margin-top: 15%;
 
 }
 
+#formh1 {
+  text-align: center;
+}
 
+footer {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1, 1fr;
+  column-gap: 1.26em;
+  position: fixed;
+  background-color: #494949;
+  color: white;
+  font-size: calc(1rem + 1vw)
+}
+#fl {
+  grid-column: 1/1;
+  grid-row: 1;
+  justify-self: center;
+  background-color: oldlace;
+}
+
+#fh {
+  grid-column: 2 / span 3;
+  grid-row: 1;
+  justify-self: baseline;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .navBar {
   position: relative;
 }

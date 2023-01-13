@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Homepage from './Home';
-import { MdClose } from "react-icons/md"
-import { FiMenu } from "react-icons/fi"
 import About from './About';
 import Menu from './Menu';
 import App from './App';
@@ -26,9 +24,9 @@ function Nav() {
     <nav className="main-nav">
       <button onClick={handleToggle}>
         {navbarOpen ? (
-          <img src={Burger} />
+          <img src={Burger} alt="hamburger menu"/>
         ) : (
-          <img src={Hamburger} />
+          <img src={Hamburger} alt="hamburger menu" />
         )}
       </button>
       <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
