@@ -22,7 +22,7 @@ function Nav() {
   return (
 
     <nav className="main-nav">
-      <button onClick={handleToggle}>
+      <button id="button" onClick={handleToggle}>
         {navbarOpen ? (
           <img src={Burger} alt="hamburger menu"/>
         ) : (

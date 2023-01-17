@@ -1,6 +1,8 @@
 import Logo from './assets/Logo.svg';
 import Basket from './assets/basket .svg';
 import Nav from './Nav.js';
+import { Link } from 'react-router-dom';
+import Order from './Order';
 function Header () {
 return (
     <header className = "main-head">
@@ -9,9 +11,9 @@ return (
 
     <img id= "hlogo" src = {Logo} alt="" />
     
-    <a href = "www.google.com" id= "hcart">
+    <Link to={Order.path} id= "hcart">
     <img id = "hcarti" src={Basket} alt=""/>
-    </a>
+    </Link>
     
     
     </header>
