@@ -1,8 +1,14 @@
-function Chicago () {
+
+
+function Chicago (props) {
+    
+    
+   
     return (
+
         <>
-            <h1> Chicago</h1>
-            <p>Chi-town bruh</p>
+            <h2> Chicago</h2>
+            <p>{props.paragraph}</p>
         </>
     )
 }

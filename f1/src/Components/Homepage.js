@@ -1,14 +1,18 @@
-import Footer from "./Footer";
-import Header from "./Header";
+import CallToAction from "./CallToAction";
+import CustomersSay from "./CustomersSay";
+import Specials from "./Specials";
+import About from "./About";
 
 function Homepage() {
+
+    
     return (
         <>
-        <Header/>
-
-        <h1>Welcome to my site</h1>
-        <Footer/>
-        </>
+       <CallToAction/>
+       <Specials/>
+       <CustomersSay/>
+       <About/>
+       </>
     )
 }
 
