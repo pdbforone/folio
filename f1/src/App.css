@@ -121,6 +121,16 @@ body {
   margin-top: 2%;
 }
 
+#calltoactionimg{
+  height: 366px;
+  width: 347px;
+}
+
+#cardimg {
+  height: 164px;
+  width: 262px;
+}
+
 footer {
   position:sticky;
   width: 100%;
@@ -156,6 +166,8 @@ footer {
   margin-top: auto;
   margin-bottom: auto;
 }
+
+
 
 @media screen and (max-width: 25.389em )  {
  
