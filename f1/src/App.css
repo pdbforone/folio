@@ -57,7 +57,7 @@ body {
   nav a {
     text-decoration: none;
     color: #495E57;
-    font-size: 1rem;
+    font-size: 1.25rem;
     max-width: 100%;
     }
   
@@ -122,6 +122,7 @@ body {
 }
 
 footer {
+  position:sticky;
   width: 100%;
   left: 0;
   bottom: 0;
@@ -135,13 +136,17 @@ footer {
   font-size: calc(1rem + 1vw);
   padding-top: 2%;
   padding-bottom: 2%;
-  max-height: 13vh;
+  max-height: 10vh;
 }
 #fl {
   grid-column: 2/3;
   grid-row: 1;
   justify-self: center;
   width: 100%;
+  max-height: 80%;
+  min-height: 8vh;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #fh {
@@ -153,9 +158,7 @@ footer {
 }
 
 @media screen and (max-width: 25.389em )  {
-  body {
-    background-color: blue;
-  }
+ 
 
   .main-hero h1 {
     font-size: calc(2rem + 3vw)
@@ -202,13 +205,17 @@ footer {
       column-gap: 1em;
       margin-left: 1em;
       margin-right: 1em;
-      
-    }  
-  
-   
+    }
+    #fl {
     
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: auto;
+      
+      
+    }  }
   
-  }
 
   @media screen and (min-width: 0em ) and (max-width: 89em) {
     
@@ -227,7 +234,6 @@ footer {
     }
   
     #hlogo {
-      
       display: none;
         }
       
@@ -238,9 +244,7 @@ footer {
   }
 
   .navBar {
-    display: block;
     position: relative;
-    color: white;
   }
   
   .navBar button {
@@ -264,7 +268,6 @@ footer {
     overflow: hidden;
     max-width: 290px;
     z-index: 9;
-    color: white;
   }
   
   .menuNav.showMenu {
@@ -275,12 +278,17 @@ footer {
     display: block;
     padding: 10px 40px;
     text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
+    text-transform: none;
+    font-weight: 700;
   }
-  ul {
+
+  nav li {
+    display: flex;
+  }
+  nav ul {
     display: block;
+  }
+  ul a {
     color: white;
   }
   .menuNav li:first-child {
@@ -290,4 +298,5 @@ footer {
   display: inline-block;
 }
 
-  }
+
+}

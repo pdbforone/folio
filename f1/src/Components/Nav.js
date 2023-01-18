@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import Homepage from './Home';
+import Homepage from './Homepage';
 import About from './About';
 import Menu from './Menu';
-import App from './App';
+import App from '../App';
 import Order from './Order';
 import Login from './Login';
-import Hamburger from './assets/🦆 icon _hamburger menu.svg';
-import Burger from './assets/🦆 icon _hamburger menu_.svg';
+import Hamburger from '../assets/🦆 icon _hamburger menu.svg'
+import Burger from '../assets/🦆 icon _hamburger menu_.svg';
 
 
 function Nav() {

@@ -1,5 +1,5 @@
-import Lime from './assets/Rectangle 4.svg';
-function Main () {
+import Lime from '../assets/Rectangle 4.svg';
+function Reservations () {
 return (
     <main  className="content">
         <section id="hero" >
@@ -22,4 +22,4 @@ return (
     </main>
 )};
 
-export default Main;
+export default Reservations;

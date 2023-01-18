@@ -1,5 +1,5 @@
-import Logo from './assets/Logo.svg';
-import Basket from './assets/basket .svg';
+import Logo from '../assets/Logo.svg';
+import Basket from '../assets/basket .svg';
 import Nav from './Nav.js';
 import { Link } from 'react-router-dom';
 import Order from './Order';
