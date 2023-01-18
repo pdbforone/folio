@@ -1,2 +1,2 @@
-const CustomersSay= () => <h1>Bob</h1>;
+const CustomersSay = () => <h1>Bob</h1>;
 export default CustomersSay;
