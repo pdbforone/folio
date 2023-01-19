@@ -93,14 +93,11 @@ body {
 .main-hero h1 {
   font-size: calc(2.5rem + 3vw);
   }
-  
- 
 
 #heroh1g {
   grid-column: 2/ span 2;
   grid-row: 8/ span 20;
   text-align: center;
-  
   }
 
 .main-hero img {
@@ -121,6 +118,9 @@ body {
   margin-top: 2%;
 }
 
+#base{
+  background-color: #494949;
+}
 #calltoactionimg{
   height: 366px;
   width: 347px;
@@ -129,6 +129,21 @@ body {
 #cardimg {
   height: 164px;
   width: 262px;
+}
+
+#testimonyimg {
+  height: 200px;
+  width: 200px;
+}
+
+#About1 {
+  height: 252px;
+  width: 309px;
+}
+
+#About2 {
+  height: 252px;
+  width: 309px;
 }
 
 footer {

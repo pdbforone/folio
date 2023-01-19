@@ -8,7 +8,7 @@ function Homepage() {
     
     return (
         <>
-       <CallToAction/>
+        <CallToAction/>
        <Specials/>
        <CustomersSay/>
        <About/>

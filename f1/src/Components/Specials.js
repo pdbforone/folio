@@ -26,8 +26,9 @@ const Specials = () =>  {
   return (
 <>
 <h2>Specials</h2>
-
 <button>Online Menu</button>
+<>
+
   {foods.map((foods) => (
           <Card
             key={foods.title}
@@ -35,6 +36,7 @@ const Specials = () =>  {
             description={foods.description}
             url="https://github.com/rgommezz/react-native=offline"
             imageSrc={foods.getImageSrc()} /> ))}
+            </>
 
 </>
 )};

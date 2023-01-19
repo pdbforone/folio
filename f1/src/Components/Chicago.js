@@ -1,15 +1,12 @@
 
 
 function Chicago (props) {
-    
-    
-   
     return (
 
-        <>
-            <h2> Chicago</h2>
-            <p>{props.paragraph}</p>
-        </>
+        <div className="chi">
+            <h2 id="chih"> Chicago</h2>
+            <p id="chip">{props.paragraph}</p>
+        </div>
     )
 }
 export default Chicago;
