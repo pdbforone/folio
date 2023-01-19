@@ -3,8 +3,8 @@ import BaseOfAction from "./BaseOfAction";
 
 function CallToAction () {
     return (
-       <><BaseOfAction /><img id="calltoactionimg" src={foodp} alt="" />
-       <button id="herobutton">Reserve A Table</button></>
+       <div className="callToAction"><BaseOfAction className="baseOfAction" /><img id="calltoactionimg" src={foodp} alt="" />
+       <button id="herobutton">Reserve A Table</button></div>
     )
 }
 

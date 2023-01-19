@@ -3,11 +3,11 @@ import About from "./About";
 import Menu from "./Menu";
 import Order from "./Order";
 import Login from "./Login";
-import Reservations from "./Bookingpage";
+import Reservations from "./Reservations";
 import { Route, Routes } from "react-router-dom";
 function Main () {
     return (
-       
+
 
             <Routes>
             <Route path="/" element={<Homepage />} />

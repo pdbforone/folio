@@ -8,11 +8,11 @@ const Card = ({ title, description, imageSrc }) => {
 
     return (
     
-    <div className="Card">
-     <img id="cardimg" src={imageSrc} alt=""/>
-    <h2>{title}</h2>
-    <p>{description}</p>
-    <a href="google.com" alt="">Order Online</a>
+    <div className="card">
+     <img id="cardImg" src={imageSrc} alt=""/>
+    <h2 className="cardH">{title}</h2>
+    <p className="cardP">{description}</p>
+    <a className="cardLink" href="google.com" alt="">Order Online</a>
    
     </div>
    )}

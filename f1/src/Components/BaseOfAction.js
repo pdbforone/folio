@@ -10,8 +10,8 @@ function BaseOfAction () {
     };
     return (
         <div id="base">
-            <hgroup className="heroBasehg"><h1> Little Lemon </h1>
-            <Chicago
+            <hgroup className="heroBaseHg"><h1> Little Lemon </h1>
+            <Chicago className="chicago"
             paragraph = {data.paragraph} />
             </hgroup>
             
