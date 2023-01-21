@@ -5,7 +5,7 @@
 
 
 body {
-  background-color: white;
+  background-color: #edefee;
   
   font-family: Karla;
   color: #495E57;
@@ -114,16 +114,82 @@ body {
 }
 
 #formh1 {
-    text-align: center;
+  text-align: center;
   margin-top: 2%;
 }
 
-#calltoactionimg{
-  height: 366px;
-  width: 347px;
+
+.callToAction {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(44, 0.504rem);
+  grid-template-rows: auto;
+  gap: 1.008rem;
+  background-color: #494949;
+  
+  
 }
 
-#cardimg {
+#heroh1 {
+  grid-column: 3;
+  grid-row: 2/7;
+  display: flex;
+  flex-direction: row;
+  font-family: Markazi text;
+  font-size: 3.0143rem;
+  font-weight: 500;
+  color: #F4CE14;
+  margin-left: 1.008rem;
+  line-height: 3.6266rem;
+
+}
+
+#chih {
+  grid-column: 1/2;
+  font-family: Markazi text;
+  font-weight: 400;
+  font-size: 1.884rem;
+  color: #edefee;
+  margin-left: 1.008rem;
+  line-height: 2.2607rem;
+}
+
+#chip {
+  grid-column: 1;
+  font-family: Karla;
+  font-weight: 500;
+  font-size: 0.8478rem;
+  line-height: 0.9891rem;
+  color: #edefee;
+  margin-left: 1.008rem;
+}
+
+#herobutton {
+  grid-column: 1/span 2;
+  padding: 0.504rem 1.008rem;
+  background-color: #F4CE14;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 1.008rem;
+  width: 9.324rem;
+  height: 2.205rem;
+  margin-left: 1.008rem;
+}
+
+#calltoactionimg{
+  grid-column: 3/span 4;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 7.159rem;
+  width: 1.008rem;
+  max-width: 100%;
+  border-radius: 1.008rem;
+}
+
+
+
+
+#cardImg {
   height: 164px;
   width: 262px;
 }

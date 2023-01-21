@@ -3,14 +3,11 @@ import Chicago from "./Chicago";
 function BaseOfAction () {
 
     const data = {
-        paragraph: `Little Lemon is a charming neighborhood bistro
-        that serves simple food and classic cocktails in a
-        lively but casual environment. The restaurant
-        features a locally-sourced menu with daily specials.`
+        paragraph: `We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.`
     };
     return (
         <div id="base">
-            <hgroup className="heroBaseHg"><h1> Little Lemon </h1>
+            <hgroup className="heroBaseHg"><h1 id="heroh1"> Little Lemon </h1>
             <Chicago className="chicago"
             paragraph = {data.paragraph} />
             </hgroup>
