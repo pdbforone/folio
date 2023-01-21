@@ -3,7 +3,10 @@ import Chicago from "./Chicago";
 function BaseOfAction () {
 
     const data = {
-        paragraph: `We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.`
+        paragraph: `We are a family owned
+        Mediterranean restaurant,
+        focused on traditional
+        recipes served with a modern twist.`
     };
     return (
         <div id="base">

@@ -5,7 +5,7 @@
 
 
 body {
-  background-color: #edefee;
+  background-color: white;
   
   font-family: Karla;
   color: #495E57;
@@ -118,72 +118,81 @@ body {
   margin-top: 2%;
 }
 
+.ctaSection {
+  width: 100%;
+  background-color: #494949;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
 
-.callToAction {
+}
+
+#callToAction {
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(44, 0.504rem);
-  grid-template-rows: auto;
-  gap: 1.008rem;
-  background-color: #494949;
+  grid-template-rows: repeat(44, 8px);
+  column-gap: 1.008rem;
+  margin-left: 1.26em;
+  margin-right: 1.26em;
   
   
 }
-
+#base {
+  grid-column: 1/ span 3;
+  grid-row: 2/ span 12;
+}
 #heroh1 {
-  grid-column: 3;
-  grid-row: 2/7;
-  display: flex;
-  flex-direction: row;
   font-family: Markazi text;
-  font-size: 3.0143rem;
+  font-size:calc(2.6246rem + 1vw);
   font-weight: 500;
   color: #F4CE14;
-  margin-left: 1.008rem;
-  line-height: 3.6266rem;
+  margin-bottom: 0em;
+  width: 13.0536em;
+  max-width: 90%;
+
 
 }
 
 #chih {
-  grid-column: 1/2;
   font-family: Markazi text;
   font-weight: 400;
-  font-size: 1.884rem;
+  font-size: 1.8841rem;
   color: #edefee;
-  margin-left: 1.008rem;
-  line-height: 2.2607rem;
+  margin-bottom: 1rem;
+
 }
 
 #chip {
-  grid-column: 1;
+  grid-column: 1/3;
+  grid-row: 15/26;
   font-family: Karla;
   font-weight: 500;
-  font-size: 0.8478rem;
-  line-height: 0.9891rem;
+  font-size: 0.8479rem;
   color: #edefee;
-  margin-left: 1.008rem;
+  width: 11.3989em;
 }
 
 #herobutton {
   grid-column: 1/span 2;
-  padding: 0.504rem 1.008rem;
+  grid-row: 34/ 38;
   background-color: #F4CE14;
+  color: black;
   font-weight: 700;
   text-align: center;
-  border-radius: 1.008rem;
+  border-radius: 16px;
+  border-width: 0rem;
+  border-style: none;
   width: 9.324rem;
   height: 2.205rem;
-  margin-left: 1.008rem;
 }
 
 #calltoactionimg{
-  grid-column: 3/span 4;
-  margin-top: auto;
-  margin-bottom: auto;
-  height: 7.159rem;
-  width: 1.008rem;
-  max-width: 100%;
-  border-radius: 1.008rem;
+  grid-column: 3/4;
+  grid-row: 15/35;
+  height: 7.9596rem;
+  width: 6.9241rem;
+  border-radius: 16px;
+  min-width: 34%;
 }
 
 
@@ -306,6 +315,66 @@ footer {
       
     }  }
   
+  @media screen and (min-width: 26em) {
+
+    #heroh1 {
+      font-family: Markazi text;
+      font-size:calc(2.79999em + 2vw);
+      font-weight: 500;
+      line-height: 4.851rem;
+      color: #F4CE14;
+      margin-bottom: 0em;
+      width: 17.64rem;
+      max-width: 90%;
+    
+    
+    }
+    
+    #chih {
+      font-family: Markazi text;
+      font-weight: 400;
+      font-size: calc(1.72rem + 1vw);
+      color: #edefee;
+      margin-bottom: 1rem;
+    
+    }
+    
+    #chip {
+      grid-column: 1/ span 3;
+      grid-row: 15/26;
+      font-family: Karla;
+      font-weight: 500;
+      font-size: calc(1.134rem + 2vw);
+      color: #edefee;
+      width: 15.246rem;
+    }
+    
+    #herobutton {
+      grid-column: 1/span 2;
+      grid-row: 34/ 38;
+      background-color: #F4CE14;
+      color: black;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 16px;
+      border-width: 0rem;
+      border-style: none;
+      width: 9.324rem;
+      height: 2.205rem;
+    }
+    
+    #calltoactionimg{
+      grid-column: 3/ span 4;
+      grid-row: 15/35;
+      height: 7.9596rem;
+      width: 9.261rem;
+      border-radius: 16px;
+      min-width: 34%;
+    }
+    
+
+
+  }
 
   @media screen and (min-width: 0em ) and (max-width: 89em) {
     
