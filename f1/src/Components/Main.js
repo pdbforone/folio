@@ -11,11 +11,11 @@ function Main () {
 
             <Routes>
             <Route path="/" element={<Homepage />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/menu" element={<Menu />} />
-                <Route path="/order" element={<Order />} />
+                <Route path="/About" element={<About />} />
+                <Route path="/Menu" element={<Menu />} />
+                <Route path="/Order" element={<Order />} />
                 <Route path="/Reservations" element={<Reservations />} />
-                <Route path="/login" element={<Login />} />
+                <Route path="/Login" element={<Login />} />
 
             </Routes>
     )
