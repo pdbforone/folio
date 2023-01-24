@@ -1,5 +1,6 @@
 import React from "react";
-const Card = ({ title, description, imageSrc }) => {
+import { Link } from "react-router-dom";
+const Card = ({ title, description, imageSrc, price }) => {
 
    
    
@@ -10,9 +11,10 @@ const Card = ({ title, description, imageSrc }) => {
     
     <div className="card">
      <img id="cardImg" src={imageSrc} alt=""/>
-    <h2 className="cardH">{title}</h2>
+    <h3 className="cardH">{title}</h3>
+    <h3 className="price">{price}</h3>
     <p className="cardP">{description}</p>
-    <a className="cardLink" href="google.com" alt="">Order Online</a>
+    <Link className="cardLink" href="google.com" alt="">Order Online</Link>
    
     </div>
    )}

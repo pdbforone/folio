@@ -196,16 +196,66 @@ body {
 }
 
 
+.specials {
+  display: grid;
+  grid-template-columns: 1, 1fr;
+  text-align: center;
+}
+.card {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.specialHeader {
+  font-family: Mazarati text;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  margin-left: 1.26rem;
+
+}
 
 #cardImg {
   height: 164px;
   width: 262px;
+  border-radius: 16px;
+  border-style: none;
+}
+
+.cardH {
+  font-size: 1.13rem;
+}
+
+.price {
+  font-size: 1.13rem;
+}
+
+.cardP {
+}
+
+.cardLink {
+  font-style: none;
+}
+
+.specialButton {
+  background-color: #F4CE14;
+  color: black;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 16px;
+  border-width: 0rem;
+  border-style: none;
+  width: 9.324rem;
+  height: 2.205rem;
 }
 
 #testimonyimg {
   height: 200px;
   width: 200px;
+  border-radius: 16px;
+  border-style: none;
 }
 
 #About1 {
@@ -254,11 +304,7 @@ footer {
   margin-bottom: auto;
 }
 
-@media screen and (min-width: 279px) and (max-width: 310px) {
-body {
-  width: 125%;
-}
-}
+
 
 @media screen and (max-width: 25.389em )  {
  
@@ -286,7 +332,6 @@ body {
 
 
 }
-
 
 
 @media screen and (max-width: 20.349em ) {
@@ -376,6 +421,7 @@ body {
       min-width: 34%;
       margin-left: 1rem;
     }
+  
     
     @media screen and (min-width: 440px) {
 
@@ -535,11 +581,6 @@ body {
   }
 
   @media screen and (min-width: 0em ) and (max-width: 80em) {
-    
-    
-    body {
-      background-color: yellow;
-    }
 
     nav {
       grid-column: 1/1 ;
