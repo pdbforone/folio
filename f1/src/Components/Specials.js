@@ -28,7 +28,7 @@ const foods = [
 const Specials = () =>  {
   return (
 <section className="specials">
-<h2 className="specialHeader">Specials</h2>
+<h2 className="specialHeader">SPECIALS</h2>
 
 <>
 

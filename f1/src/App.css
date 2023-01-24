@@ -209,11 +209,15 @@ body {
 }
 
 .specialHeader {
-  font-family: Mazarati text;
+  font-family: Karla;
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: left;
   margin-left: 1.26rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 23.38px;
+  color: #000000;
 
 }
 
@@ -226,17 +230,26 @@ body {
 
 .cardH {
   font-size: 1.13rem;
+  color: #000000;
+  font-weight: 700;
 }
 
 .price {
   font-size: 1.13rem;
+  color: #495E57;
+  font-weight: 500;
 }
 
 .cardP {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #495E57;
 }
 
 .cardLink {
   font-style: none;
+  color: #494949;
 }
 
 .specialButton {
@@ -269,7 +282,6 @@ body {
 }
 
 footer {
-  position:sticky;
   width: 100%;
   left: 0;
   bottom: 0;
@@ -277,7 +289,6 @@ footer {
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: 1, 1fr;
   column-gap: 1.26em;
-  position: fixed;
   background-color: #494949;
   color: white;
   font-size: calc(1rem + 1vw);
