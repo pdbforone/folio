@@ -262,6 +262,7 @@ body {
   border-style: none;
   width: 9.324rem;
   height: 2.205rem;
+  justify-self: center;
 }
 
 #testimonyimg {

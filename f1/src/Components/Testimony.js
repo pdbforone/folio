@@ -8,14 +8,14 @@ const Testimony = ({ Rating, imageSrc, Name, Review }) => {
 
     return (
     
-    <div className="Testimony">
+    <section className="Testimony">
      
-    <h2>{Rating}</h2>
+    <h2 className="rating">{Rating}</h2>
     <img id="testimonyimg" src={imageSrc} alt=""/>
-    <h2>{Name}</h2>
-    <h2>{Review}</h2>
+    <h2 className="name">{Name}</h2>
+    <h2 className="review">{Review}</h2>
    
-    </div>
+    </section>
    )}
   export default Testimony;
   

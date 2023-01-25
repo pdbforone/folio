@@ -23,7 +23,7 @@ const testimonials = [
 const CustomersSay = () =>  {
   return (
 <>
-<h2>Testimonials</h2>
+<h2 className="testimonials">Testimonials</h2>
 
 <button>Online Menu</button>
   {testimonials.map((testimonials) => (

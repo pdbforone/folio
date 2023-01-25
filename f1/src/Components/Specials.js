@@ -15,7 +15,7 @@ const foods = [
         price: "$12.99",
         description:`Lorem ipsum dolor sit amet consecteturadipiscing elit,
          sed do eiusmod temporincididun .t lahnne eit do ore magna alliiqua`,
-        getImageSrc: () => require("../assets/bruchetta.svg"),
+        getImageSrc: () => require(`../assets/bruchetta.svg`).default,
       },
       {
         title: "Lemon Dessert",
