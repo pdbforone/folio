@@ -22,10 +22,10 @@ const testimonials = [
 
 const CustomersSay = () =>  {
   return (
-<>
-<h2 className="testimonials">Testimonials</h2>
+<section className="specials">
+<h2 className="specialHeader">Testimonials</h2>
 
-<button>Online Menu</button>
+<button className="specialButton">Online Menu</button>
   {testimonials.map((testimonials) => (
           <Testimony
             key={testimonials.Rating}
@@ -36,6 +36,6 @@ const CustomersSay = () =>  {
             url="https://github.com/rgommezz/react-native=offline"
              /> ))}
 
-</>
+</section>
 )};
 export default CustomersSay;

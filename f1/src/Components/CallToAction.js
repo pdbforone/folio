@@ -1,4 +1,4 @@
-import foodp from "../assets/greek salad.jpg"
+import foodp from "../assets/restauranfood.jpg"
 import BaseOfAction from "./BaseOfAction";
 
 function CallToAction () {

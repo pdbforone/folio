@@ -7,12 +7,12 @@ function About () {
     
 
         return (
-        <>
+        <section className="about">
             <BaseOfAction/>
             <img id="About1"src={foodums} alt=""/>
             <img id="About2" src={chefB} alt=""/>
 
-        </>)
+        </section>)
 
 }
 export default About;
