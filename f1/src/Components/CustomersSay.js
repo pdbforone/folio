@@ -24,8 +24,9 @@ const CustomersSay = () =>  {
   return (
 <section className="customersSay">
 <h2 className="customersH">Testimonials</h2>
+<div id="buttonBox">
+<button className="testimonyButton">Online Menu</button></div>
 
-<button className="specialButton">Online Menu</button>
   {testimonials.map((testimonials) => (
           <Testimony
             key={testimonials.Rating}

@@ -1,3 +1,6 @@
+@import url('https://fonts.google.com/specimen/Markazi+Text?query=Markazi+T');
+@import url('https://fonts.google.com/specimen/Karla?query=Karla');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +9,6 @@
 
 body {
   background-color: white;
-  
   font-family: Karla;
   color: #495E57;
   overflow-y: scroll;
@@ -134,8 +136,6 @@ body {
   column-gap: 1.008rem;
   margin-left: 1.26em;
   margin-right: 1.26em;
-  
-  
 }
 #base {
   grid-column: 1/ span 3;
@@ -149,8 +149,6 @@ body {
   margin-bottom: 0em;
   width: 13.0536em;
   max-width: 90%;
-
-
 }
 
 #chih {
@@ -159,7 +157,6 @@ body {
   font-size: 1.8841rem;
   color: #edefee;
   margin-bottom: 1rem;
-
 }
 
 #chip {
@@ -206,7 +203,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-self: center;
-
 }
 
 .specialHeader {
@@ -262,7 +258,7 @@ body {
   font-style: none;
   color: #494949;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.3rem;
 }
 
 .specialButton {
@@ -282,45 +278,95 @@ body {
 .customersSay {
   grid-template-columns: 1, 1fr;
   background-color: #fbdabb;
-  align-items: center;
+  justify-items: center;
+  padding-top: 1rem;
 }
 
 .cardLikeBox {
-  justify-self: center;
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .customersH {
 color:#494949;
+font-family: Markazi Text;
+text-align: center;
+margin-bottom: 1rem;
+}
+
+#buttonBox {
+  grid-column: 1;
+  text-align: center;
+}
+
+.testimonyButton {
+  position: relative;
+  align-items: center;
+  background-color: #F4CE14;
+  color: black;
+  font-weight: 700;
+  border-radius: 16px;
+  border-width: 0rem;
+  border-style: none;
+  width: 9.324rem;
+  height: 2.205rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .rating {
   font-size: 1.16rem;
   margin-bottom: 0.38rem;
+  text-align: center;
 }
 
-#testimonyimg {
-  height: 3.06rem;
-  width: 3.44rem;
+#testimonyImg {
+  height: 6rem;
+  width: 6rem;
   border-radius: 16px;
   border-style: none;
-  justify-self: center;
+  align-self: center;
   margin-top: 0.38rem;
   margin-bottom: 0.38rem;
 }
 
-.about {
+.about1 {
+  grid-template-columns: 1 1fr;
   background-color: #495E57;
-
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.aboutBox {
+  text-align: left;
+  margin: 1.26rem;
 }
 
+
+
+
 #About1 {
-  height: 252px;
-  width: 309px;
+  height: 10rem;
+  width: 10rem;
+  margin-top: 1rem;
+  margin-bottom: -7rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #About2 {
-  height: 252px;
-  width: 309px;
+  display: flex;
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 1rem;
+  border-radius: 16px;
+  box-shadow: 0.25px 0.25px 0.25px 0.5px #edefee;
 }
 
 footer {
