@@ -22,8 +22,8 @@ const testimonials = [
 
 const CustomersSay = () =>  {
   return (
-<section className="specials">
-<h2 className="specialHeader">Testimonials</h2>
+<section className="customersSay">
+<h2 className="customersH">Testimonials</h2>
 
 <button className="specialButton">Online Menu</button>
   {testimonials.map((testimonials) => (
