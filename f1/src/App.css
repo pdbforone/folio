@@ -366,7 +366,7 @@ margin-bottom: 1rem;
   margin-left: auto;
   margin-right: 1rem;
   border-radius: 16px;
-  box-shadow: 0.25px 0.25px 0.25px 0.5px #edefee;
+  box-shadow: 0.1px 0.1px 0.1px 0.1px #495E57;
 }
 
 footer {
@@ -520,7 +520,19 @@ footer {
       min-width: 34%;
       margin-left: 1rem;
     }
-  
+
+    #About1 {
+      height: 10rem;
+      width: 10rem;
+      margin-top: 1rem;
+      margin-bottom: -7rem;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+      margin-right: 5rem;
+    }
+  }
     
     @media screen and (min-width: 440px) {
 
@@ -535,6 +547,87 @@ footer {
     }
 
 
+  @media screen and (min-width: 37.5rem) {
+
+    .customersSay {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background-color: #fbdabb;
+      padding-top: 1rem;
+    }
+    
+    .cardLikeBox {
+      display: flex;
+      flex-direction: row ;
+    }
+    
+    .customersH {
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+    color:#494949;
+    font-family: Markazi Text;
+    margin-left: 1.26rem;
+    align-self: center;
+    }
+    
+    #buttonBox {
+      display: flex;
+      grid-column: 3;
+      grid-row: 1;
+      flex-direction: row;
+      align-self: center;
+    }
+    
+    .testimonyButton {
+      background-color: #F4CE14;
+      color: black;
+      font-weight: 700;
+      border-radius: 16px;
+      border-width: 0rem;
+      border-style: none;
+      width: 9.324rem;
+      height: 2.205rem;
+  
+
+    }
+    
+    .rating {
+      font-size: 1.16rem;
+      margin-bottom: 0.38rem;
+      text-align: center;
+    }
+    
+    #testimonyImg {
+      height: 6rem;
+      width: 6rem;
+      border-radius: 16px;
+      border-style: none;
+    }
+    
+    #About1 {
+      height: 10.25rem;
+      width: 16.38rem;
+      margin-top: 1rem;
+      margin-bottom: -7rem;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+      margin-right: 8rem;
+    }
+    #About2 {
+      display: flex;
+      height: 10.25rem;
+      width: 16.38rem;
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+      margin-right: 1rem;
+      border-radius: 16px;
+      box-shadow: 0.1px 0.1px 0.1px 0.1px #495E57;
+    }
+    
   }
 
   }
