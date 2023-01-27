@@ -551,16 +551,20 @@ footer {
 
     .customersSay {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      background-color: #fbdabb;
-      padding-top: 1rem;
+      grid-auto-columns: repeat(3,1fr);
+      grid-auto-rows: auto;
+      column-gap: 0rem;
+      justify-content: space-evenly;
+      padding-bottom: 1rem;
     }
     
     .cardLikeBox {
-      display: flex;
-      flex-direction: row ;
+      padding-top: 1rem;
+      grid-column: center span;
+      grid-row: 2;
+      display: flexbox;
     }
-    
+
     .customersH {
     display: flex;
     grid-column: 1;
@@ -696,7 +700,7 @@ footer {
 
 
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 87.3rem) {
 
     #callToAction {
       display: grid;
@@ -769,6 +773,92 @@ footer {
     }
     
 
+.specials {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(10, 71.5px);
+      background-color: #EE9972;
+      margin-left: 1.26rem;
+      margin-right: 1.26rem;
+    }
+    .card {
+      grid-column: 3/span 10;
+      grid-row: 3/ span 9;
+      display: inline-flexbox;
+      flex-direction: row;
+      justify-self: space-evenly;
+    }
+    
+    .specialHeader {
+      font-family: Karla;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      text-align: left;
+      margin-left: 1.26rem;
+      font-size: 1.25rem;
+      font-weight: 800;
+      line-height: 23.38px;
+      color: #000000;
+    
+    }
+    
+    #cardImg {
+      height: 164px;
+      width: 262px;
+      border-radius: 16px;
+      border-style: none;
+      align-self: center;
+      margin-bottom: 0.6rem;
+    }
+    
+    .cardH {
+      font-size: 1.13rem;
+      color: #000000;
+      font-weight: 700;
+      align-self: left;
+      margin-bottom: 0.6rem;
+    }
+    
+    .price {
+      font-size: 1.13rem;
+      color: #495E57;
+      font-weight: 500;
+      text-align: right;
+      margin-bottom: 0.005rem;
+    }
+    
+    .cardP {
+      font-size: 1rem;
+      line-height: 1.5;
+      font-weight: 400;
+      color: #495E57;
+      width: 15.56rem;
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 0.6rem;
+    }
+    
+    .cardLink {
+      font-style: none;
+      color: #494949;
+      text-align: center;
+      margin-bottom: 1.3rem;
+    }
+    
+    .specialButton {
+      background-color: #F4CE14;
+      color: black;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 16px;
+      border-width: 0rem;
+      border-style: none;
+      width: 9.324rem;
+      height: 2.205rem;
+      justify-self: center;
+      margin-bottom: 1rem;
+    }
+    
 
   }
 
