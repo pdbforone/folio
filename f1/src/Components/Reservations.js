@@ -1,3 +1,4 @@
+import ReservationForm from './ReservationForm';
 import Lime from '../assets/Rectangle 4.svg';
 function Reservations () {
 return (
@@ -13,12 +14,7 @@ return (
         </div>
         </section>
 
-    <section id= "forms">
-        <hgroup id="formh1">
-            <h1>Let's get started and see where</h1>
-            <h1>we can fit you in!</h1>
-        </hgroup>
-    </section>
+   <ReservationForm/>
     </main>
 )};
 
