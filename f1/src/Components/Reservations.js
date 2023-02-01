@@ -1,5 +1,6 @@
 import ReservationForm from './ReservationForm';
 import Lime from '../assets/Rectangle 4.svg';
+
 function Reservations () {
 return (
     <main  className="content">
@@ -13,8 +14,7 @@ return (
         <img id="lime" src={Lime} alt= "Lime Logo"/>
         </div>
         </section>
-
-   <ReservationForm/>
+        <ReservationForm/>
     </main>
 )};
 

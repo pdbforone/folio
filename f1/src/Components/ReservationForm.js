@@ -1,16 +1,20 @@
+
+const styles = {display: "grid",maxwidth: "200px", gap: "20px"}
+
+
 const ReservationForm = () => {
     
     <section id= "forms">
-
+    
     <hgroup id="formh1">
         <h1>Let's get started and see where</h1>
         <h1>we can fit you in!</h1>
     </hgroup>
 
-    <form style="display: grid; max-width: 200px; gap: 20px">
-   <label for="res-date">Choose date</label>
-   <input type="date" id="res-date">
-   <label for="res-time">Choose time</label>
+    <form style ={styles} />
+   <label htmlFor="res-date">Choose date</label>
+   <input type="date" id="res-date"/>
+   <label htmlFor="res-time">Choose time</label>
    <select id="res-time ">
       <option>17:00</option>
       <option>18:00</option>
@@ -19,16 +23,18 @@ const ReservationForm = () => {
       <option>21:00</option>
       <option>22:00</option>
    </select>
-   <label for="guests">Number of guests</label>
-   <input type="number" placeholder="1" min="1" max="10" id="guests">
-   <label for="occasion">Occasion</label>
+   <label htmlFor="guests">Number of guests</label>
+   <input type="number" placeholder="1" min="1" max="10" id="guests"/>
+   <label htmlFor="occasion">Occasion</label>
    <select id="occasion">
       <option>Birthday</option>
       <option>Anniversary</option>
    </select>
-   <input type="submit" value="Make Your reservation">
-</form>
+   <input type="submit" value="Make Your reservation"/>
 </section>
+
+
 }
+
 
 export default ReservationForm;
