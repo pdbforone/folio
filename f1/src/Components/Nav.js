@@ -31,25 +31,25 @@ function Nav() {
       </button>
       <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
         <li className="nav-item">
-          <NavLink to="/" activeClassName="active-link" onClick={() => closeMenu()}
+          <NavLink to="/" activeclassname="active-link" onClick={() => closeMenu()}
             exact class="nav-link">{Homepage.text}Home</NavLink></li>
 
         <li className="nav-item">
-        <NavLink to="about" activeClassName="active-link" onClick={() => closeMenu()} 
+        <NavLink to="about" activeclassname="active-link" onClick={() => closeMenu()} 
                     exact class= "nav-link">{About.text}About</NavLink></li>
         <li className="nav-item">
-        <NavLink to="menu" activeClassName="active-link" onClick={() => closeMenu()} 
+        <NavLink to="menu" activeclassname="active-link" onClick={() => closeMenu()} 
                     exact class= "nav-link">{Menu.text}Menu</NavLink></li>
         <li className="nav-item">
-        <NavLink to="reservations" activeClassName="active-link" onClick={() => closeMenu()} 
+        <NavLink to="reservations" activeclassname="active-link" onClick={() => closeMenu()} 
                     exact class= "nav-link">{Reservations.text}Reservations</NavLink>
                     </li>
         <li className="nav-item">
-        <NavLink to="order" activeClassName="active-link" onClick={() => closeMenu()} 
+        <NavLink to="order" activelcassname="active-link" onClick={() => closeMenu()} 
                     exact class= "nav-link">{Order.text}Order</NavLink>
                     </li>
         <li className="nav-item">
-        <NavLink to="login" activeClassName="active-link" onClick={() => closeMenu()} 
+        <NavLink to="login" activeclassname="active-link" onClick={() => closeMenu()} 
                     exact class= "nav-link">{Login.text}Login</NavLink>
                     </li>
 
