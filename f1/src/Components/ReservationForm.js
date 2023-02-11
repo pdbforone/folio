@@ -6,19 +6,18 @@ import { useState } from "react";
 function ReservationForm (props) {
    const { availableTimes, setAvailableTimes } = props;
 
-   const [date, SetDate] = useState("");
-   const [guests, SetGuests] = useState("");
-   const [wheelch, SetWheelch] = useState("");
-   const [occasion, SetOccasion] = useState("");
-   const [FormData, SetFormData] = useState("");
-   const styles = {display: "grid", maxwidth: "200px", gap: "20px", color: "black"};
+   const [date, setDate] = useState("");
+   const [guests, setGuests] = useState("");
+   const [wheelch, setWheelch] = useState("");
+   const [occasion, setOccasion] = useState("");
+   const styles = {display: "grid", maxWidth: "200px", gap: "20px", color: "black"};
    const handleSubmit = (e) => {
       e.preventDefault();
-      SetDate("");
+      setDate("");
       setAvailableTimes("17:00");
-      SetGuests("1");
-      SetWheelch("1");
-      SetOccasion("Birthday");
+      setGuests("1");
+      setWheelch("1");
+      setOccasion("Birthday");
      console.log("Form Submitted!");}
 
 
@@ -32,16 +31,15 @@ function ReservationForm (props) {
     </hgroup>
 
     <form onSubmit={handleSubmit}
-    style ={styles}
-    value {...FormData}
-    onChange={(e)=>SetFormData(e.target.value)}>
+    style ={styles}>
    <label htmlFor="date">Choose date</label>
    <input type="date" 
    placeholder="Choose Date" 
    name="date" 
    value={date} 
    id="date" 
-   onChange={(e)=>SetDate(e.target.value)}
+   onChange={(e)=> 
+   setDate(e.target.value)}
     />
    <label htmlFor="time">Choose time</label>
    <select id="time "
@@ -58,7 +56,7 @@ function ReservationForm (props) {
     max="10" 
     id="guests"
     value={guests}
-   onChange={(e)=>SetGuests(e.target.value)}
+   onChange={(e)=>setGuests(e.target.value)}
     />
    <label htmlFor="wheelch">Number of wheelchairs</label>
    <input type="number"
@@ -67,11 +65,11 @@ function ReservationForm (props) {
     max="10" 
     id="wheelch"
     value={wheelch}
-   onChange={(e)=>SetWheelch(e.target.value)}/>
+   onChange={(e)=>setWheelch(e.target.value)}/>
    <label htmlFor="occasion">Occasion</label>
    <select id="occasion"
    value={occasion}
-   onChange={(e)=>SetOccasion(e.target.value)}>
+   onChange={(e)=>setOccasion(e.target.value)}>
       <option>Birthday</option>
       <option>Anniversary</option>
    </select>
