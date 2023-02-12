@@ -1,11 +1,8 @@
 import { useState } from "react";
 
-
-
-
 function ReservationForm (props) {
-   const { availableTimes, setAvailableTimes } = props;
-
+   const {availableTimes, setAvailableTimes } = props;
+   const [time, setTime] = useState(availableTimes)
    const [date, setDate] = useState("");
    const [guests, setGuests] = useState("");
    const [wheelch, setWheelch] = useState("");
@@ -14,11 +11,11 @@ function ReservationForm (props) {
    const handleSubmit = (e) => {
       e.preventDefault();
       setDate("");
-      setAvailableTimes("17:00");
+      setTime(availableTimes[0]);
       setGuests("1");
       setWheelch("1");
       setOccasion("Birthday");
-     console.log("Form Submitted!");}
+     console.log("Form Submitted!");};
 
 
 
@@ -42,12 +39,12 @@ function ReservationForm (props) {
    setDate(e.target.value)}
     />
    <label htmlFor="time">Choose time</label>
-   <select id="time "
-   value={availableTimes}
-   onChange={(e)=>setAvailableTimes(e.target.value)}>
-   {props.availableTimes.map((time) => (
-          <option key={time} value={time}>{time}</option>
-        ))}
+   <select id="time"
+   value={time}
+   onChange={(e)=>setTime(e.target.value)}>
+   {availableTimes.map(time => (
+      <option key={time} value={time}>{time}</option>
+   ))}
    </select>
    <label htmlFor="guests">Number of guests</label>
    <input type="number"
@@ -74,8 +71,7 @@ function ReservationForm (props) {
       <option>Anniversary</option>
    </select>
    <input type="submit"
-   value="Preview Reservation" 
-   
+   value="Preview Reservation"
    />
    </form>
 </section>
