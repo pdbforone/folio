@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function ReservationForm (props) {
-   const {availableTimes, setAvailableTimes } = props;
+   const {availableTimes, handleRemove } = props;
    const [time, setTime] = useState(availableTimes)
    const [date, setDate] = useState("");
    const [guests, setGuests] = useState("");
@@ -17,7 +17,9 @@ function ReservationForm (props) {
       setOccasion("Birthday");
      console.log("Form Submitted!");};
 
-
+     const removeTime = (id) => {
+      handleRemove(id);
+     };
 
    return (
     <section id= "forms">
@@ -28,7 +30,7 @@ function ReservationForm (props) {
     </hgroup>
 
     <form onSubmit={handleSubmit}
-    style ={styles}>
+    style ={styles} availableTimes={availableTimes}> 
    <label htmlFor="date">Choose date</label>
    <input type="date" 
    placeholder="Choose Date" 
@@ -40,11 +42,17 @@ function ReservationForm (props) {
     />
    <label htmlFor="time">Choose time</label>
    <select id="time"
-   value={time}
-   onChange={(e)=>setTime(e.target.value)}>
-   {availableTimes.map(time => (
-      <option key={time} value={time}>{time}</option>
-   ))}
+   value={time.id}
+   onChange={(e) =>
+  setTime(
+    availableTimes.find((t) => t.id === parseInt(e.target.value))
+  )
+}>
+  {availableTimes.map((item => (
+    <option key={item.id} value={item.id} removeTime={removeTime}>
+      {item.time}
+    </option>
+   )))}
    </select>
    <label htmlFor="guests">Number of guests</label>
    <input type="number"
@@ -72,9 +80,11 @@ function ReservationForm (props) {
    </select>
    <input type="submit"
    value="Preview Reservation"
+   onClick={() => handleRemove(time.id)}
    />
    </form>
 </section>
+
 
    );
 }

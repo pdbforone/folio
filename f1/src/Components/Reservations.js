@@ -19,7 +19,7 @@ function Reservations (props) {
         </section>
         <ReservationForm
         availableTimes={props.availableTimes}
-        setAvailableTimes={props.setAvailableTimes}/>
+        handleRemove={props.handleRemove}/>
     </main>
     </>
 )};
