@@ -44,6 +44,7 @@ function Main () {
                 <Route path="/order" element={<Order />} />
                 <Route path="/reservations" element={<Reservations
                 availableTimes={availableTimes} handleRemove={handleRemove}
+                dispatchAvailableTimes={dispatchAvailableTimes}
                 />} />
                 <Route path="/login" element={<Login />} />
 
