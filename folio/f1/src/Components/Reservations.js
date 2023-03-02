@@ -17,7 +17,13 @@ function Reservations (props) {
                 <img id="lime" src={Lime} alt="Lime Logo" />
             </div>
         </section>
-        <ReservationForm availableTimes={props.availableTimes} setAvailableTimes={props.setAvailableTimes}/>
+        <ReservationForm
+        availableTimes={props.availableTimes}
+        handleRemove={props.handleRemove}
+        dispatchAvailableTimes={props.dispatchAvailableTimes}
+        initializeTimes={props.initializeTimes}
+        setInitializeTimes={props.setInitializeTimes}
+        />
     </main>
     </>
 )};
