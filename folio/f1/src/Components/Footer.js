@@ -1,4 +1,5 @@
-import Lime from '../assets/white logo.svg';
+import Lime from '../Assets/white logo.svg';
+import '../CSS/Footer.css';
 function Footer () {
 return (
     <footer className="main-footer">

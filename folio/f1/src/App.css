@@ -1,6 +1,3 @@
-@import url('https://fonts.google.com/specimen/Markazi+Text?query=Markazi+T');
-@import url('https://fonts.google.com/specimen/Karla?query=Karla');
-
 * {
   margin: 0;
   padding: 0;
@@ -120,23 +117,90 @@ body {
   margin-top: 2%;
 }
 
-.ctaSection {
-  width: 100%;
-  background-color: #494949;
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
-
+.formsBox{
+  text-align: center;
 }
-
-#callToAction {
+.formsProper{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+  
+form {
+  margin-top: 1rem;
+  justify-content: center;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(44, 8px);
-  column-gap: 1.008rem;
-  margin-left: 1.26em;
-  margin-right: 1.26em;
+  grid-template-rows: repeat(11, 0.25fr);
+  column-gap: 1.26em;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.formStyle {
+  width: 15em;
+  height: 100px; /* increase the height to give more space for the text */
+  background-color: #edefee;
+  text-align: center;
+  border-radius: 8px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.2em; /* adjust the line height to fit the text better */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* identical to box height, or 80% */
+  color: #495E57;
+}
+
+select.formStyle {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("./Assets/wine.png"), url("./Assets/arrow.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 1em center, right 1em center;
+  background-size: auto 80%, auto 15%;
+  padding: 10px; /* add 10 pixels of padding to all sides of the button */
+}
+
+
+.formStyle:checked, .formStyle:active, .formStyle:focus {
+  background: #495E57;
+  color:#edefee;
+  background-image: url("./Assets/White arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 1em center;
+  background-size: auto 15%;
+  padding: 10px; /* add 10 pixels of padding to all sides of the button */
+  transition: all 0.5s fade-in;
+  
+}
+
+ option {
+  width: 15em;
+  height: 100px; /* increase the height to give more space for the text */
+  background-color: #edefee;
+  text-align: center !important;
+  border-radius: 8px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.2em; /* adjust the line height to fit the text better */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* identical to box height, or 80% */
+  color: #495E57;
+}
+
+:hover .formStyle option{
+  background: #495E57;
+  color: white;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
 #base {
   grid-column: 1/ span 3;
   grid-row: 2/ span 12;
@@ -151,13 +215,7 @@ body {
   max-width: 90%;
 }
 
-#chih {
-  font-family: Markazi text;
-  font-weight: 400;
-  font-size: 1.8841rem;
-  color: #edefee;
-  margin-bottom: 1rem;
-}
+
 
 #chip {
   grid-column: 1/3;
@@ -169,7 +227,7 @@ body {
   width: 11.3989em;
 }
 
-#herobutton {
+.heroButton {
   grid-column: 1/span 2;
   grid-row: 34/ 38;
   background-color: #F4CE14;
@@ -181,6 +239,11 @@ body {
   border-style: none;
   width: 9.324rem;
   height: 2.205rem;
+}
+
+.heroButtonBox {
+  grid-column: 1/span 2;
+  grid-row: 34/ 38;
 }
 
 #calltoactionimg{
@@ -218,48 +281,6 @@ body {
 
 }
 
-#cardImg {
-  height: 164px;
-  width: 262px;
-  border-radius: 16px;
-  border-style: none;
-  align-self: center;
-  margin-bottom: 0.6rem;
-}
-
-.cardH {
-  font-size: 1.13rem;
-  color: #000000;
-  font-weight: 700;
-  align-self: left;
-  margin-bottom: 0.6rem;
-}
-
-.price {
-  font-size: 1.13rem;
-  color: #495E57;
-  font-weight: 500;
-  text-align: right;
-  margin-bottom: 0.005rem;
-}
-
-.cardP {
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #495E57;
-  width: 15.56rem;
-  text-align: left;
-  margin-top: 0;
-  margin-bottom: 0.6rem;
-}
-
-.cardLink {
-  font-style: none;
-  color: #494949;
-  text-align: center;
-  margin-bottom: 1.3rem;
-}
 
 .specialButton {
   background-color: #F4CE14;
@@ -331,77 +352,9 @@ margin-bottom: 1rem;
   margin-bottom: 0.38rem;
 }
 
-.about1 {
-  grid-template-columns: 1 1fr;
-  background-color: #495E57;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-}
-.aboutBox {
-  text-align: left;
-  margin: 1.26rem;
-}
 
 
 
-
-#About1 {
-  height: 10rem;
-  width: 10rem;
-  margin-top: 1rem;
-  margin-bottom: -7rem;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: row;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#About2 {
-  display: flex;
-  height: 10rem;
-  width: 10rem;
-  display: flex;
-  flex-direction: row;
-  margin-left: auto;
-  margin-right: 1rem;
-  border-radius: 16px;
-  box-shadow: 0.1px 0.1px 0.1px 0.1px #495E57;
-}
-
-footer {
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: 1, 1fr;
-  column-gap: 1.26em;
-  background-color: #494949;
-  color: white;
-  font-size: calc(1rem + 1vw);
-  padding-top: 2%;
-  padding-bottom: 2%;
-  max-height: 10vh;
-}
-#fl {
-  grid-column: 2/3;
-  grid-row: 1;
-  justify-self: center;
-  width: 100%;
-  max-height: 80%;
-  min-height: 8vh;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-#fh {
-  grid-column: 1;
-  grid-row: 1;
-  justify-self: right;
-  margin-top: auto;
-  margin-bottom: auto;
-}
 
 
 
@@ -453,15 +406,7 @@ footer {
       margin-left: 1em;
       margin-right: 1em;
     }
-    #fl {
-    
-        width: 100%;
-        margin-top: auto;
-        margin-bottom: auto;
-        padding: auto;
-      
-      
-    }  }
+     }
   
   @media screen and (min-width: 428px) {
 
@@ -477,14 +422,7 @@ footer {
     
     }
     
-    #chih {
-      font-family: Markazi text;
-      font-weight: 400;
-      font-size: calc (2.52rem + 1vw);
-      color: #edefee;
-      margin-bottom: 1rem;
     
-    }
     
     #chip {
       grid-column: 1/ span 3;
@@ -497,7 +435,12 @@ footer {
       width: 11.46rem;
     }
     
-    #herobutton {
+    .heroButtonBox {
+      grid-column: 1/span 2;
+      grid-row: 34/ 38;
+    }
+
+    .heroButton {
       grid-column: 1/span 2;
       grid-row: 34/ 38;
       background-color: #F4CE14;
@@ -520,20 +463,7 @@ footer {
       min-width: 34%;
       margin-left: 1rem;
     }
-
-    #About1 {
-      height: 10rem;
-      width: 10rem;
-      margin-top: 1rem;
-      margin-bottom: -7rem;
-      border-radius: 16px;
-      display: flex;
-      flex-direction: row;
-      margin-left: auto;
-      margin-right: 5rem;
-    }
   }
-    
     @media screen and (min-width: 440px) {
 
     #calltoactionimg{
@@ -608,30 +538,6 @@ footer {
       border-radius: 16px;
       border-style: none;
     }
-    
-    #About1 {
-      height: 10.25rem;
-      width: 16.38rem;
-      margin-top: 1rem;
-      margin-bottom: -7rem;
-      border-radius: 16px;
-      display: flex;
-      flex-direction: row;
-      margin-left: auto;
-      margin-right: 8rem;
-    }
-    #About2 {
-      display: flex;
-      height: 10.25rem;
-      width: 16.38rem;
-      display: flex;
-      flex-direction: row;
-      margin-left: auto;
-      margin-right: 1rem;
-      border-radius: 16px;
-      box-shadow: 0.1px 0.1px 0.1px 0.1px #495E57;
-    }
-    
   }
 
   }
@@ -650,14 +556,7 @@ footer {
     
     }
     
-    #chih {
-      font-family: Markazi text;
-      font-weight: 400;
-      font-size: calc (2.52rem + 2vw);
-      color: #edefee;
-      margin-bottom: 1rem;
-    
-    }
+   
     
     #chip {
       grid-column: 1/ span 3;
@@ -670,7 +569,12 @@ footer {
       width: 20.46rem;
     }
     
-    #herobutton {
+    .heroButtonBox {
+      grid-column: 1/span 2;
+      grid-row: 34/ 38;
+    }
+
+    .heroButton {
       grid-column: 1/span 2;
       grid-row: 34/ 38;
       background-color: #F4CE14;
@@ -728,14 +632,7 @@ footer {
     
     }
     
-    #chih {
-      font-family: Markazi text;
-      font-weight: 400;
-      font-size: calc (2.52rem + 2vw);
-      color: #edefee;
-      margin-bottom: 26px;
     
-    }
     
     #chip {
       grid-column: 2/ span 5;
@@ -748,7 +645,11 @@ footer {
       width: 23.688rem;
     }
     
-    #herobutton {
+    .heroButtonBox {
+      grid-column: 2/span 3;
+      grid-row: 37/ 48;
+    }
+    .heroButton {
       grid-column: 2/span 3;
       grid-row: 37/ 48;
       background-color: #F4CE14;
@@ -861,6 +762,11 @@ footer {
       font-style: none;
     }
     
+    .specialLink {
+      grid-column: 9/10;
+      grid-row: 3;
+      margin-top: 0.8rem;
+    }
     .specialButton {
       grid-column: 9/10;
       grid-row: 3;
@@ -877,33 +783,7 @@ footer {
       margin-bottom: 1rem;
     }
   
-  .about1 {
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(8,auto);
-    column-gap: 70px;
-    padding-left: 70px;
-    padding-right: 70px;
-    column-gap: 20px;
-    height: 616px;
-  }
-
-  .aboutBox{
-    grid-column: 3/ span 6;
-    grid-row: 2/ span 6;
-  }
-  #About1 {
-    grid-column: 7/ span 10 ;
-    grid-row: 4/span 7;
-    width: 15.75rem;
-    height: 19.31rem;
-  }
-#About2 {
-  grid-column: 9/ span 11;
-  grid-row: 3/ span 6;
-  width: 15.75rem;
-    height: 19.31rem;
-}
+  
   }
 
   @media screen and (min-width: 0em ) and (max-width: 68em) {

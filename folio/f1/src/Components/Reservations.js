@@ -1,5 +1,5 @@
 import ReservationForm from './ReservationForm';
-import Lime from '../assets/Rectangle 4.svg';
+import Lime from '../Assets/Rectangle 4.svg';
 
 
 function Reservations (props) {

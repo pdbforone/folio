@@ -1,0 +1,43 @@
+#cardImg {
+    height: 164px;
+    width: 262px;
+    border-radius: 16px;
+    border-style: none;
+    align-self: center;
+    margin-bottom: 0.6rem;
+  }
+  
+  .cardH {
+    font-size: 1.13rem;
+    color: #000000;
+    font-weight: 700;
+    align-self: left;
+    margin-bottom: 0.6rem;
+  }
+  
+  .price {
+    font-size: 1.13rem;
+    color: #495E57;
+    font-weight: 500;
+    text-align: right;
+    margin-bottom: 0.005rem;
+  }
+  
+  .cardP {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #495E57;
+    width: 15.56rem;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+  }
+  
+  .cardLink {
+    font-style: none;
+    color: #494949;
+    text-align: center;
+    margin-bottom: 1.3rem;
+  }
+  

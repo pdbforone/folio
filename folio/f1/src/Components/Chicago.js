@@ -1,4 +1,4 @@
-
+import '../CSS/Chicago.css';
 
 function Chicago (props) {
     return (

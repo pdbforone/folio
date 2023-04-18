@@ -1,0 +1,40 @@
+#chih {
+    font-family: Markazi text;
+    font-weight: 400;
+    font-size: 1.8841rem;
+    color: #edefee;
+    margin-bottom: 1rem;
+  }
+  @media screen and (min-width: 428px) {
+    #chih {
+        font-family: Markazi text;
+        font-weight: 400;
+        font-size: calc (2.52rem + 1vw);
+        color: #edefee;
+        margin-bottom: 1rem;
+      
+      }
+  }
+
+  @media screen and (min-width: 834px) {
+
+    #chih {
+        font-family: Markazi text;
+        font-weight: 400;
+        font-size: calc (2.52rem + 2vw);
+        color: #edefee;
+        margin-bottom: 1rem;
+      
+      }
+  }
+
+  @media screen and (min-width: 87.3rem) {
+    #chih {
+        font-family: Markazi text;
+        font-weight: 400;
+        font-size: calc (2.52rem + 2vw);
+        color: #edefee;
+        margin-bottom: 26px;
+      
+      }
+    }

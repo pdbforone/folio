@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import { Link } from "react-router-dom";
 
 
 const foods = [
@@ -11,7 +12,7 @@ const foods = [
       Chicago style feta cheese,
       garnished with crunchy garlic 
       and rosemary croutons. `,
-      getImageSrc: () => require("../assets/greek salad.jpg"),
+      getImageSrc: () => require("../Assets/greek salad.jpg"),
     },
     {
         title: "Bruschetta",
@@ -23,21 +24,21 @@ const foods = [
         or cheese are examples of variations.
         In Italy, a brustolina grill is frequently used
          to create bruschetta.`,
-        getImageSrc: () => require(`../assets/bruchetta.svg`).default,
+        getImageSrc: () => require(`../Assets/bruchetta.svg`).default,
       },
       {
         title: "Lemon Dessert",
         price: "$12.99",
         description:`Lorem ipsum dolor sit amet consectetur adipiscing elit,
          sed do eiusmod tempor incididun.t lahnne eit do ore magna alliiqua`,
-        getImageSrc: () => require("../assets/lemon dessert.jpg"),
+        getImageSrc: () => require("../Assets/lemon dessert.jpg"),
       },];
 
 const Specials = () =>  {
   return (
 <section className="specials">
 <h2 className="specialHeader">SPECIALS</h2>
-<button className="specialButton">Online Menu</button>
+<Link className="specialLink"to="/menu"><button className="specialButton">Online Menu</button></Link>
 <>
 
   {foods.map((foods) => (

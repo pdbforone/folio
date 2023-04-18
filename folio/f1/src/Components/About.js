@@ -1,6 +1,7 @@
 import BaseOfAction from "./BaseOfAction";
-import chefB from '../assets/restaurant chef B.jpg';
-import foodums from '../assets/restaurant.jpg';
+import chefB from '../Assets/restaurant chef B.jpg';
+import foodums from '../Assets/restaurant.jpg';
+import '../CSS/About.css';
 
 
 function About () {

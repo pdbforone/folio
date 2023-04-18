@@ -1,13 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../CSS/ConfirmedBooking.css';
 
 const ConfirmedBooking = () => {
   return (
-    <div>
-      <h1>Booking Confirmed!</h1>
-      <p>Thank you for booking with us. Your reservation has been confirmed.</p>
-      <Link to="/">Back to Home</Link>
-    </div>
+    <main className="confirmedBox">
+      <h1 className="confirmedH1">Booking Confirmed!</h1>
+      <h2 className="confirmedP">Thank you for booking with us. Your reservation has been confirmed.</h2>
+      <div className="confirmedButtonBox"><Link to="/" >
+        <button className="backButton">Back To Home</button>
+      </Link>
+      </div>
+    </main>
   );
 };
 

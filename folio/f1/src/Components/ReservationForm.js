@@ -63,11 +63,12 @@ useEffect(() => {
 }, [date, guests, wheelch, validateForm]);
 
 return (
-<section id="forms">
+<section className="formsBox">
 <hgroup id="formh1">
 <h1>Let's get started and see where</h1>
 <h1>we can fit you in!</h1>
 </hgroup>
+<section className="formsProper" >
 <form
      onSubmit={handleSubmit}
      style={styles}
@@ -129,21 +130,27 @@ type="number"
       max="10"
       title="Please enter a number between 1 and 10."
     />
+    
     <label htmlFor="occasion">Occasion</label>
     <select
+    className="formStyle"
+    placeholder="Occasion"
       id="occasion"
       value={occasion}
       onChange={(e) => setOccasion(e.target.value)}
-    >
-      <option>Birthday</option>
-      <option>Anniversary</option>
+    > 
+      
+      <option value="birthday">Birthday</option>
+      <option value="anniversary">Anniversary</option>
     </select>
+
     <input
       type="submit"
-      value="Preview Reservation"
+      value="Book Reservation"
       disabled={!isFormValid}
     />
   </form>
+  </section>
 </section>
 );
 }

@@ -1,0 +1,70 @@
+.confirmedBox {
+  width: 100%;
+  background-color: #494949;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  height: 43rem;
+
+}
+
+.confirmedH1 {
+    font-family: Markazi Text;
+    color: #F4CE14;
+    text-align: center;
+    padding-top: 5em;
+}
+
+.confirmedP {
+    font-family: Karla;
+    color: #edefee;
+    text-align: center;
+    padding-top: 2em;
+
+}
+
+.confirmedButtonBox {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.backButton {
+    background-color: #F4CE14;
+  color: black;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 16px;
+  border-width: 0rem;
+  border-style: none;
+  width: 9.324rem;
+  height: 2.205rem;
+}
+
+@media screen and (min-width: 834px) {
+    
+    .backButton {  
+    background-color: #F4CE14;
+      color: black;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 16px;
+      border-width: 0rem;
+      border-style: none;
+      width: 14.324rem;
+      height: 2.455rem;
+    }
+}
+
+@media screen and (min-width: 87.3rem) {
+    .backButton {
+    background-color: #F4CE14;
+      color: black;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 16px;
+      border-width: 0rem;
+      border-style: none;
+      width: 12.159rem;
+      height: 3.276rem;
+    }
+}

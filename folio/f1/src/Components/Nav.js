@@ -5,8 +5,8 @@ import About from './About';
 import Menu from './Menu';
 import Order from './Order';
 import Login from './Login';
-import Hamburger from '../assets/icon _hamburger menu.svg';
-import Burger from '../assets/icon _hamburger menu_.svg';
+import Hamburger from '../Assets/icon _hamburger menu.svg';
+import Burger from '../Assets/icon _hamburger menu_.svg';
 import Reservations from './Reservations';
 
 

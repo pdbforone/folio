@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../CSS/Card.css';
+
 const Card = ({ title, description, imageSrc, price }) => {
 
    
@@ -14,7 +16,7 @@ const Card = ({ title, description, imageSrc, price }) => {
      <img id="cardImg" src={imageSrc} alt=""/>
     <p className="cardP">{description}</p>
     <h3 className="price">{price}</h3>
-    <Link className="cardLink" href="google.com" alt="">Order Online</Link>
+    <Link className="cardLink" to="/order" alt="">Order Online</Link>
    
     </div>
    )}
