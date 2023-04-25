@@ -89,6 +89,7 @@ min={new Date().toISOString().slice(0, 10)}
 <label htmlFor="time">Choose time</label>
 <select
   id="time"
+  className="formButton"
   value={selectedTimes.id}
   onChange={handleTimeChange}
   disabled={!availableTimes || availableTimes.length === 0}
@@ -111,6 +112,7 @@ min={new Date().toISOString().slice(0, 10)}
 type="number"
  placeholder="1"
       id="guests"
+      className="formButton"
       value={guests}
       onChange={(e) => setGuests(e.target.value)}
       required
@@ -120,6 +122,7 @@ type="number"
     />
     <label htmlFor="wheelch">Number of wheelchairs</label>
     <input
+      className="formButton"
       type="number"
       placeholder="1"
       id="wheelch"
@@ -148,6 +151,7 @@ type="number"
       type="submit"
       value="Book Reservation"
       disabled={!isFormValid}
+      className="formButton"
     />
   </form>
   </section>
