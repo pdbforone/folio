@@ -164,7 +164,7 @@ select.formStyle {
 }
 
 
-.formStyle:checked, .formStyle:active, .formStyle:focus {
+.formStyle:valid:active {
   background: #495E57;
   color:#edefee;
   background-image: url("./Assets/White arrow.png");
@@ -190,6 +190,13 @@ select.formStyle {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   /* identical to box height, or 80% */
   color: #495E57;
+}
+
+option:hover {
+  background: #495E57;
+  color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 :hover .formStyle option{
@@ -236,7 +243,7 @@ select.formStyle {
   color: #495E57;
 }
 
-#date:active, #date:focus, #date:hover #date:checked {
+#date:valid {
   background-color: #495E57;
   color: #edefee;
 }
@@ -252,16 +259,85 @@ color:#495E57;
   border-radius: 8px;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: auto;
-  appearance: auto;
-  padding: 5px;
+input[type="number"] {
+  margin-top: 3px;
+  margin-bottom: 6px;
+  width: 14em;
+  height: 100px; /* increase the height to give more space for the text */
+  text-align: center !important;
+  border-radius: 8px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.2em; /* adjust the line height to fit the text better */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* identical to box height, or 80% */
+  background-color: #edefee;
   color: #495E57;
+  background-image: url('./Assets/updown.png');
+  background-position: right 1em center;
+  background-size: auto 37% ;
+  background-repeat: no-repeat;
+  caret-color: transparent;
+  padding: 10px; /* add 10 pixels of padding to all sides of the button */
+}
+
+input[type="number"]:valid:hover {
+  background-color: #495E57;
+  color: white;
+  background-image: url('./Assets/Whiteupdown.png');
+  background-position: right 1em center;
+  background-size: auto 37% ;
+  background-repeat: no-repeat;
+  caret-color: transparent;
+  
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  opacity: 1 !important;
+  background: transparent !important;
+  border-width: 0px;
+  margin: 0;
+  border-left: 1em solid transparent;
+  height: 34px;
+  width: 10px;
+  cursor: pointer;
 }
 
 
 
+
+.formButton:focus:valid {
+  background: #495E57;
+  color:#edefee;
+  padding: 10px; /* add 10 pixels of padding to all sides of the button */
+  transition: background-color 0.5s fade-in, color 0.5s ease-in;
+}
+
+.formButtonTime {
+  margin-top: 3px;
+  margin-bottom: 6px;
+  width: 15em;
+  height: 100px; /* increase the height to give more space for the text */
+  text-align: center !important;
+  border-radius: 8px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.2em; /* adjust the line height to fit the text better */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* identical to box height, or 80% */
+  background-color: #edefee;
+  color: #495E57;
+}
+
+.formButtonTime:valid:focus {
+  background-color: #495E57;
+  color: white;
+}
 
 
 #base {

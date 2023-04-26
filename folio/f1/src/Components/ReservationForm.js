@@ -89,7 +89,7 @@ min={new Date().toISOString().slice(0, 10)}
 <label htmlFor="time">Choose time</label>
 <select
   id="time"
-  className="formButton"
+  className="formButtonTime"
   value={selectedTimes.id}
   onChange={handleTimeChange}
   disabled={!availableTimes || availableTimes.length === 0}
