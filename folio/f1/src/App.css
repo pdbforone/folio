@@ -112,231 +112,21 @@ body {
 
 }
 
-#formh1 {
-  text-align: center;
-  margin-top: 2%;
-}
-
-.formsBox{
-  text-align: center;
-}
-.formsProper{
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-  
-form {
-  margin-top: 1rem;
-  justify-content: center;
+#callToAction {
   display: grid;
-  grid-template-rows: repeat(11, 0.25fr);
-  column-gap: 1.26em;
-  margin-left: auto;
-  margin-right: auto;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(50, 8px);
+  column-gap: 1.26rem;
+  margin-left: 1.26em;
+  margin-right: 1.26em;
 }
-
-.formStyle {
-  width: 15em;
-  height: 100px; /* increase the height to give more space for the text */
-  background-color: #edefee;
-  text-align: center;
-  border-radius: 8px;
-  font-family: 'Karla';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 25px;
-  line-height: 1.2em; /* adjust the line height to fit the text better */
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  /* identical to box height, or 80% */
-  color: #495E57;
-}
-
-select.formStyle {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url("./Assets/wine.png"), url("./Assets/arrow.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: left 1em center, right 1em center;
-  background-size: auto 80%, auto 15%;
-  padding: 10px; /* add 10 pixels of padding to all sides of the button */
-}
-
-
-.formStyle:valid:active {
-  background: #495E57;
-  color:#edefee;
-  background-image: url("./Assets/White arrow.png");
-  background-repeat: no-repeat;
-  background-position: right 1em center;
-  background-size: auto 15%;
-  padding: 10px; /* add 10 pixels of padding to all sides of the button */
-  transition: all 0.5s fade-in;
-  
-}
-
- option {
-  width: 15em;
-  height: 100px; /* increase the height to give more space for the text */
-  background-color: #edefee;
-  text-align: center !important;
-  border-radius: 8px;
-  font-family: 'Karla';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 25px;
-  line-height: 1.2em; /* adjust the line height to fit the text better */
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  /* identical to box height, or 80% */
-  color: #495E57;
-}
-
-option:hover {
-  background: #495E57;
-  color: white;
-  justify-content: center;
-  align-items: center;
-}
-
-:hover .formStyle option{
-  background: #495E57;
-  color: white;
-  justify-content: center;
-  align-items: center;
-}
-
-.formButton {
-  margin-top: 3px;
-  margin-bottom: 6px;
-  width: 15em;
-  height: 100px; /* increase the height to give more space for the text */
-  text-align: center !important;
-  border-radius: 8px;
-  font-family: 'Karla';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 25px;
-  line-height: 1.2em; /* adjust the line height to fit the text better */
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  /* identical to box height, or 80% */
-  background-color: #edefee;
-  color: #495E57;
-}
-
-
-#date {
-  margin-top: 3px;
-  margin-bottom: 6px;
-  width: 15em;
-  height: 100px; /* increase the height to give more space for the text */
-  text-align: center !important;
-  border-radius: 8px;
-  font-family: 'Karla';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 25px;
-  line-height: 1.2em; /* adjust the line height to fit the text better */
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  /* identical to box height, or 80% */
-  background-color: #edefee;
-  color: #495E57;
-}
-
-#date:valid {
-  background-color: #495E57;
-  color: #edefee;
-}
-input[type="date"]::-webkit-calendar-picker-indicator:hover {
-  background-color: #495E57;
-  color: #edefee;
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-color:#495E57;
-  font-size: 25px;
-  padding: 8px;
-  border-radius: 8px;
-}
-
-input[type="number"] {
-  margin-top: 3px;
-  margin-bottom: 6px;
-  width: 14em;
-  height: 100px; /* increase the height to give more space for the text */
-  text-align: center !important;
-  border-radius: 8px;
-  font-family: 'Karla';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 25px;
-  line-height: 1.2em; /* adjust the line height to fit the text better */
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  /* identical to box height, or 80% */
-  background-color: #edefee;
-  color: #495E57;
-  background-image: url('./Assets/updown.png');
-  background-position: right 1em center;
-  background-size: auto 37% ;
-  background-repeat: no-repeat;
-  caret-color: transparent;
-  padding: 10px; /* add 10 pixels of padding to all sides of the button */
-}
-
-input[type="number"]:valid:hover {
-  background-color: #495E57;
-  color: white;
-  background-image: url('./Assets/Whiteupdown.png');
-  background-position: right 1em center;
-  background-size: auto 37% ;
-  background-repeat: no-repeat;
-  caret-color: transparent;
-  
-}
-
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none !important;
-  opacity: 1 !important;
-  background: transparent !important;
-  border-width: 0px;
+.ctaSection {
+  width: 100%;
+  background-color: #494949;
+  font-weight: 500;
   margin: 0;
-  border-left: 1em solid transparent;
-  height: 34px;
-  width: 10px;
-  cursor: pointer;
-}
+  padding: 0;
 
-
-
-
-.formButton:focus:valid {
-  background: #495E57;
-  color:#edefee;
-  padding: 10px; /* add 10 pixels of padding to all sides of the button */
-  transition: background-color 0.5s fade-in, color 0.5s ease-in;
-}
-
-.formButtonTime {
-  margin-top: 3px;
-  margin-bottom: 6px;
-  width: 15em;
-  height: 100px; /* increase the height to give more space for the text */
-  text-align: center !important;
-  border-radius: 8px;
-  font-family: 'Karla';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 25px;
-  line-height: 1.2em; /* adjust the line height to fit the text better */
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  /* identical to box height, or 80% */
-  background-color: #edefee;
-  color: #495E57;
-}
-
-.formButtonTime:valid:focus {
-  background-color: #495E57;
-  color: white;
 }
 
 
@@ -386,7 +176,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 #calltoactionimg{
-  grid-column: 3/4;
+  grid-column: 4;
+  margin-left: 2.25em;
   grid-row: 15/35;
   height: 7.9596rem;
   width: 6.9241rem;
@@ -394,6 +185,282 @@ input[type="number"]::-webkit-inner-spin-button {
   min-width: 34%;
 }
 
+
+
+#formh1 {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.formsBox{
+  text-align: center;
+}
+.formsProper{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+  
+form {
+  margin-top: 1rem;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: repeat(11, 0.25fr);
+  column-gap: 1.26em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formStyle {
+  width: 15em;
+  height: 65px; /* increase the height to give more space for the text */
+  background-color: #edefee;
+  text-align: center;
+  border-radius: 8px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.2em; /* adjust the line height to fit the text better */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* identical to box height, or 80% */
+  color: #495E57;
+}
+
+select.formStyle {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("./Assets/wine.png"), url("./Assets/arrow.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 1em center, right 1em center;
+  background-size: auto 80%, auto 15%;
+  padding: 10px; /* add 10 pixels of padding to all sides of the button */
+}
+
+
+.formStyle:active:valid {
+  background: #495E57;
+  color:#edefee;
+  background-image: url("./Assets/White arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 1em center;
+  background-size: auto 15%;
+  padding: 10px; /* add 10 pixels of padding to all sides of the button */
+  transition: all 0.5s fade-in;
+  
+}
+
+ option {
+  width: 15em;
+  height: 15px; /* increase the height to give more space for the text */
+  background-color: #edefee;
+  text-align: center !important;
+  border-radius: 8px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.2em; /* adjust the line height to fit the text better */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* identical to box height, or 80% */
+  color: #495E57;
+}
+
+option:hover {
+  background: #495E57;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+:hover .formStyle option{
+  background: #495E57;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.formButton {
+  margin-top: 3px;
+  margin-bottom: 6px;
+  width: 15em;
+  height: 65px; /* increase the height to give more space for the text */
+  text-align: center !important;
+  border-radius: 8px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.2em; /* adjust the line height to fit the text better */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* identical to box height, or 80% */
+  background-color: #edefee;
+  color: #495E57;
+}
+
+
+#date {
+  margin-top: 3px;
+  margin-bottom: 6px;
+  width: 15em;
+  height: 65px; /* increase the height to give more space for the text */
+  text-align: center !important;
+  border-radius: 8px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.2em; /* adjust the line height to fit the text better */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* identical to box height, or 80% */
+  background-color: #edefee;
+  color: #495E57;
+}
+
+#date:valid:active {
+  background-color: #495E57;
+  color: #edefee;
+}
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  background-color: #495E57;
+  color: #edefee;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+color:#495E57;
+  font-size: 25px;
+  padding: 8px;
+  border-radius: 8px;
+}
+.formButtonTime {
+  margin-top: 3px;
+  margin-bottom: 6px;
+  width: 15em;
+  height: 65px; /* increase the height to give more space for the text */
+  text-align: center !important;
+  border-radius: 8px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.2em; /* adjust the line height to fit the text better */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* identical to box height, or 80% */
+  background-color: #edefee;
+  color: #495E57;
+  }
+
+select.formButtonTime {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('./Assets/arrow.png');
+  background-repeat: no-repeat;
+  background-position: right 1em center;
+  background-size: auto 15%;
+  padding: 10px; /* add 10 pixels of padding to all sides of the button */
+}
+
+.formButtonTime:valid:focus {
+  background-color: #495E57;
+  color: white;
+  background-image: url("./Assets/White arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 1em center;
+  background-size: auto 15%;
+  padding: 10px; /* add 10 pixels of padding to all sides of the button */
+  transition: all 0.5s fade-in;
+}
+input[type="number"] {
+  margin-top: 3px;
+  margin-bottom: 6px;
+  width: 14em;
+  height: 38px; /* increase the height to give more space for the text */
+  text-align: center !important;
+  border-radius: 8px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.2em; /* adjust the line height to fit the text better */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* identical to box height, or 80% */
+  background-color: #edefee;
+  color: #495E57;
+  background-image: url('./Assets/updown.png');
+  background-position: right 1em center;
+  background-size: auto 37% ;
+  background-repeat: no-repeat;
+  caret-color: transparent;
+  padding: 10px; /* add 10 pixels of padding to all sides of the button */
+}
+
+input[type="number"]:valid:hover {
+  background-color: #495E57;
+  color: white;
+  background-image: url('./Assets/Whiteupdown.png');
+  background-position: right 1em center;
+  background-size: auto 37% ;
+  background-repeat: no-repeat;
+  caret-color: transparent;
+  
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  opacity: 1 !important;
+  background: transparent !important;
+  border-width: 0px;
+  margin: 0;
+  border-left: 1.1em solid transparent;
+  height: 50px;
+  width: 10px;
+  cursor: pointer;
+}
+
+.formButton:focus:valid {
+  background: #495E57;
+  color:#edefee;
+  padding: 10px; /* add 10 pixels of padding to all sides of the button */
+  transition: background-color 0.5s fade-in, color 0.5s ease-in;
+}
+
+.formSubmitButton:invalid {
+  margin-top: 3px;
+  margin-bottom: 6px;
+  width: 15em;
+  height: 100px; /* increase the height to give more space for the text */
+  text-align: center !important;
+  border-radius: 8px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.2em; /* adjust the line height to fit the text better */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* identical to box height, or 80% */
+  background-color: #edefee;
+  color: #495E57;
+}
+
+.formSubmitButton:valid {
+  margin-top: 3px;
+  margin-bottom: 6px;
+  width: 15em;
+  height: 100px; /* increase the height to give more space for the text */
+  text-align: center !important;
+  border-radius: 8px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.2em; /* adjust the line height to fit the text better */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* identical to box height, or 80% */
+  background-color: #494949;
+  color: white;
+}
 
 .specials {
   display: grid;
@@ -493,6 +560,92 @@ margin-bottom: 1rem;
 
 
 
+@media screen and (max-width: 26.5625em) and (min-width: 20em) {
+
+  form {
+    text-align: center !important;
+  }
+  
+  
+  .formStyle {
+    width: 12em;
+    height: auto;
+    font-size: 20px;
+  }
+  
+  select.formStyle {
+    width: 12em;
+    font-size: 20px;
+    background-position: left .25em center, right 0.25em center;
+    background-size: auto 60%, auto 15%;
+    padding: 10px; /* add 10 pixels of padding to all sides of the button */
+  }
+  
+  .formButton {
+    width: 12em;
+    height: auto;
+    font-size: 20px;
+  }
+  input.formButton {
+    width: 12em;
+    height: auto;
+    font-size: 20px;
+  }
+  #date {
+    width: 11.75em;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  #time {
+    width: 12em;
+    height: 40px;
+    font-size: 20px;
+    background-position: right 0.25em center;
+    background-size: auto 15%;
+  }
+
+  input[type="number"] {
+    text-align: center !important;
+    width: 11em;
+    height: auto;
+    font-size: 20px;
+    background-position: right 0.25em center;
+    background-size: auto 37% ;
+    background-repeat: no-repeat;
+    caret-color: transparent;
+    
+  }
+  
+  input[type="number"]:valid:hover {
+    background-position: right 0.25em center;
+    background-size: auto 37% ;
+    background-repeat: no-repeat;
+    caret-color: transparent;
+    
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    opacity: 1 !important;
+    background: transparent !important;
+    border-width: 0px;
+    margin: 0;
+    border-left: 1em solid transparent;
+    height: 50px;
+    width: 1px;
+    cursor: pointer;
+  }
+  
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    color:#495E57;
+      font-size: 20px;
+      padding: 8px;
+      border-radius: 8px;
+    }
+}
+
 
 
 
@@ -545,7 +698,11 @@ margin-bottom: 1rem;
       margin-left: 1em;
       margin-right: 1em;
     }
+
+    
      }
+
+
   
   @media screen and (min-width: 428px) {
 
@@ -603,7 +760,7 @@ margin-bottom: 1rem;
       margin-left: 1rem;
     }
   }
-    @media screen and (min-width: 440px) {
+    @media screen and (min-width: 27.5em) {
 
     #calltoactionimg{
       grid-column: 3/ span 4;

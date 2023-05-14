@@ -1,6 +1,5 @@
 import foodp from "../Assets/restauranfood.jpg"
 import BaseOfAction from "./BaseOfAction";
-import '../CSS/CallToAction.css';
 import { Link } from "react-router-dom";
 
 function CallToAction () {

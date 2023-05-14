@@ -151,7 +151,7 @@ type="number"
       type="submit"
       value="Book Reservation"
       disabled={!isFormValid}
-      className="formButton"
+      className="formSubmitButton"
     />
   </form>
   </section>
