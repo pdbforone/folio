@@ -1,9 +1,9 @@
-import Card from "./Card";
+import Specials from "./Specials";
 const Menu = () => {
     
     return (
       <div className="main__content">
-      <Card></Card>
+      <Specials/>
             </div>
     )
   }

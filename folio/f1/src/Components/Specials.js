@@ -24,13 +24,15 @@ const foods = [
         or cheese are examples of variations.
         In Italy, a brustolina grill is frequently used
          to create bruschetta.`,
-        getImageSrc: () => require(`../Assets/bruchetta.svg`).default,
+        getImageSrc: () => require(`../Assets/better bruschetta small.png`)
       },
       {
         title: "Lemon Dessert",
         price: "$12.99",
-        description:`Lorem ipsum dolor sit amet consectetur adipiscing elit,
-         sed do eiusmod tempor incididun.t lahnne eit do ore magna alliiqua`,
+        description:`Experience the irresistible taste of our layered lemon cake. 
+        Moist lemon-infused cake, creamy lemon buttercream, and a 
+        touch of elegance with lemon slices on top. Perfect for any 
+        occasion or tea time. Indulge in Mediterranean citrus bliss.`,
         getImageSrc: () => require("../Assets/lemon dessert.jpg"),
       },];
 

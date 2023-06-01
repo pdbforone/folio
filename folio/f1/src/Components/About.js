@@ -1,6 +1,6 @@
 import BaseOfAction from "./BaseOfAction";
-import chefB from '../Assets/restaurant chef B.jpg';
-import foodums from '../Assets/restaurant.jpg';
+import chefB from '../Assets/chef but smaller.png';
+import foodums from '../Assets/Restaurant olive small.jpg';
 import '../CSS/About.css';
 
 

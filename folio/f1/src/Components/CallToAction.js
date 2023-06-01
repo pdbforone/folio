@@ -1,4 +1,4 @@
-import foodp from "../Assets/restauranfood.jpg"
+import foodp from "../Assets/Salmon but smaller.png"
 import BaseOfAction from "./BaseOfAction";
 import { Link } from "react-router-dom";
 
